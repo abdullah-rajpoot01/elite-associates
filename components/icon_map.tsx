@@ -100,6 +100,10 @@ import {
   Calculator,
 
   type LucideIcon,
+  HomeIcon,
+  Bed,
+  Toilet,
+  RulerDimensionLine,
 } from "lucide-react";
 
 import {
@@ -204,7 +208,9 @@ export const ICONS = {
   Wallet,
   Wifi,
   Wrench,
-
+Bed,
+Toilet,
+RulerDimensionLine,
   // ===== SOCIAL =====
   WhatsApp,
   Facebook,
@@ -236,6 +242,7 @@ export const ICONS = {
   Gavel,
   Banknote,
   Calculator,
+  HomeIcon
 } as const;
 
 

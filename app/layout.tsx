@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar1 } from "@/components/navbar";
+import Footer1 from "@/components/footer-1";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -31,9 +32,10 @@ export default function RootLayout({
       lang="en"
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
     >
-      <body suppressHydrationWarning className="min-h-full flex flex-col">
+      <body suppressHydrationWarning className="min-h-full flex flex-col max-w-7xl mx-auto">
         <Navbar1 />
         {children}
+        <Footer1/>
       </body>
     </html>
   );

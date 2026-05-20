@@ -3,7 +3,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Medal } from "lucide-react";
+import { Medal, User } from "lucide-react";
 import Link from "next/link";
 import { WhatsApp } from "./social-icons";
 
@@ -37,20 +37,20 @@ const HeroSection2 = () => {
                   size="lg"
                   className="h-10 px-12 md:px-8 cursor-pointer "
                 >
-                  View All Listings →
+                  View All Listings 
                 </Button>
               </Link>
               <Link href={"/about-us"} >
                 <Button
                   size="lg" variant={"outline"}
-                  className="h-10 px-8 cursor-pointer  "
+                  className="h-10 px-8 cursor-pointer"
                 >
-                <WhatsApp className="size-5"/> Whatsapp →
+                <User className="size-5"/> About Us
                 </Button>
               </Link>
             </div>
           </div>
-        <div className="aspect-square w-full rounded-xl bg-accent " >
+        <div className="mx-auto aspect-square w-full max-w-sm lg:max-w-md rounded-xl bg-accent " >
           <img src={"/hero-section.png"} />
         </div>
         </div>
