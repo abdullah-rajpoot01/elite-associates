@@ -13,14 +13,7 @@ const HeroSection2 = () => {
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center lg:grid-cols-2 gap-8 ">
           <div className="flex flex-col gap-6 items-center lg:items-start">
-            <Badge
-              variant="outline"
-              className="h-auto font-semibold [&>svg]:size-4! rounded-md text-muted-foreground gap-2 px-4 py-2"
-            >
-              <Medal aria-hidden="true" />
-              Buy • Sell • Invest
-            </Badge>
-
+           
             <div className="flex flex-col gap-4 text-center lg:text-left">
               <h1 className="text-2xl font-bold tracking-tight text-balance md:text-5xl text-foreground animate-sink animate-duration-1000 animate-delay-150 ">
                 <span className="text-primary  ">Elite Associates</span>  Buy, Sell & Invest with Confidence
@@ -50,7 +43,7 @@ const HeroSection2 = () => {
               </Link>
             </div>
           </div>
-        <div className="mx-auto aspect-square w-full max-w-sm lg:max-w-md rounded-xl bg-accent " >
+        <div className="mx-auto aspect-square w-full max-w-sm lg:max-w- rounded-xl bg-accent " >
           <img src={"/hero-section.png"} />
         </div>
         </div>
