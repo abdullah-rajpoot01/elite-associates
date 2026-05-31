@@ -40,10 +40,10 @@ const Page = async ({ params }: PageProps) => {
 
             <div className='flex flex-col justify-center items-center text-center'>
 
-                <h2 className="mx-auto mt-5 max-w-4xl text-balance font-medium tracking-[-0.04em]  text-2xl">
+                <h2 className="mx-auto mt-5 max-w-4xl text-balance font-medium tracking-[-0.04em]  text-3xl sm:text-4xl">
                     {category.name}
                 </h2>
-                <p className="mt-5 max-w-4xl text-muted-foreground text-lg tracking-[-0.01em] ">
+                <p className="mt-5 max-w-4xl text-muted-foreground text-xl sm:text-2xl tracking-[-0.01em] ">
                     {category.description}
                 </p>
             </div>
