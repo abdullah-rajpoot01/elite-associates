@@ -52,14 +52,14 @@ const Footer1 = () => {
 
       <div className="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-gray-500/30 ">
         <div className="">
-          <a href={"/"} className="inline-flex items-center justify-center gap-2  rounded-full ">
+          <Link href={"/"} className="inline-flex items-center justify-center gap-2  rounded-full ">
             <img
               src={
                 "/text-logo.png"
               }
-              className="max-h-25 dark:invert"
+              className="max-h-15 dark:invert rounded-lg hover:animate-tada hover:animate-iteration-count-once"
             />
-          </a>
+          </Link>
           <p className="max-w-102 text-sm mt-6 ">
             We don’t just build websites or create content — we build a complete digital presence that attracts high-value clients, boosts credibility, and turns visitors into loyal customers.
           </p>

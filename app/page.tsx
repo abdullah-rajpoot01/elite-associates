@@ -8,14 +8,29 @@ import { listings } from "@/content/data";
 
 
 export default function Home() {
-  const slicedListing = listings.slice(0, 8);
+  
+let featuredListing = listings.filter((listing) => listing.featured).slice(0, 8);
+const itemsNeeded = 8 - featuredListing.length;
+
+if (itemsNeeded > 0) {
+  // Get featured IDs to avoid duplicates
+  const featuredIds = new Set(featuredListing.map(item => item.id));
+  
+  // Get non-featured listings that aren't already in featuredListing
+  const nonFeaturedListings = listings.filter(
+    listing => !featuredIds.has(listing.id)
+  );
+  
+  const slicedListings = nonFeaturedListings.slice(0, itemsNeeded);
+  featuredListing = [...featuredListing, ...slicedListings];
+}
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <Hero />
       <Categories />
-      <Listing listings={slicedListing} />
-      <AboutFeatures />
+      <Listing listings={featuredListing} />
       <BuySellSection />
+      <AboutFeatures />
       <Testimonials />
     </div>
   );

@@ -14,6 +14,7 @@ import {
     HouseIcon,
     Grid,
     Landmark,
+    LayoutTemplate,
 } from "lucide-react";
 import { } from "lucide-react";
 import {
@@ -42,6 +43,7 @@ import { cn } from "@/lib/utils";
 import { WhatsApp } from "./social-icons";
 import { useState } from "react";
 import Link from "next/link";
+import ButtonNeon from "./ui/neon-button";
 
 interface MenuItem {
     title: string;
@@ -78,11 +80,32 @@ const Navbar1 = ({
     },
     menu = [
         { title: "Home", url: "/" },
-        { title: "Properties", url: "/listings" },
+        {
+            title: "Properties", items: [
+                {
+                    title: "Property For Sale",
+                    description: "High-converting, visually engaging pages.",
+                    icon: <LayoutTemplate className="size-5 shrink-0" />,
+                    url: "/listings/for-sale",
+                },
+                {
+                    title: "Property For Rent",
+                    description: "Modern websites that reflect your brand.",
+                    icon: <Building2 className="size-5 shrink-0" />,
+                    url: "/listings/for-rent",
+                },
+                {
+                    title: "View All Properties",
+                    description: "Modern websites that reflect your brand.",
+                    icon: <Building2 className="size-5 shrink-0" />,
+                    url: "/listings",
+                },
+            ], url: "#"
+        },
         { title: "Categories", url: "/categories" },
         { title: "About", url: "/about-us" },
         { title: "Contact", url: "/contact-us" },
-       
+
     ],
     cta = {
         primary: { title: "Start a Call", url: "tel:+923046954705" },
@@ -110,7 +133,7 @@ const Navbar1 = ({
                         <Link href={logo.url} className="flex items-center  gap-2 hover:animate-tada hover:animate-iteration-count-once">
                             <img
                                 src={logo.src}
-                                className="max-h-10 dark:invert object-cover"
+                                className="max-h-10 dark:invert object-cover rounded-lg "
                                 alt={logo.alt}
                             />
                         </Link>
@@ -124,17 +147,17 @@ const Navbar1 = ({
                     </div>
                     <div className="flex gap-2">
                         <Link href={cta.primary.url} className="hover:animate-tada hover:animate-iteration-count-once" >
-                            <Button asChild size="lg">
+                            <ButtonNeon asChild size="lg">
                                 <div className="flex gap-2">
                                     <Phone />{cta.primary.title}
                                 </div>
-                            </Button>
+                            </ButtonNeon>
                         </Link>
                         <Link href={"https://wa.me/923046954705"} className="hover:animate-tada hover:animate-iteration-count-once" target="_blank"
                             rel="noopener noreferrer">
-                            <Button asChild size="lg">
+                            <ButtonNeon asChild size="lg">
                                 <WhatsApp className="w-10" />
-                            </Button>
+                            </ButtonNeon>
                         </Link>
                     </div>
                 </nav>

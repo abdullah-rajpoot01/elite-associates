@@ -10,11 +10,11 @@ const CategoriesSection = () => {
   return (
     <div className="px-6 py-20 overflow-x-hidden bg-background">
       <div className="mx-auto w-full max-w-(--breakpoint-xl)">
-        <h2 className="text-pretty font-medium  tracking-[-0.04em] sm:mx-auto sm:max-w-xl sm:text-center md:text-[2.75rem] md:leading-[1.2] text-xl md:text-3xl lg:text-4xl ">
-          Strengthen your strategy
+        <h2 className="text-pretty font-medium  tracking-[-0.04em] sm:mx-auto sm:max-w-3xl text-center md:leading-[1.2] text-3xl sm:text-4xl  ">
+          Explore Properties by Category
         </h2>
-        <p className="mt-3 text-pretty text-muted-foreground text-xl tracking-[-0.01em] sm:text-center md:text-2xl">
-          No complex configs. Just copy, paste, and start building
+        <p className="mt-3 text-pretty text-muted-foreground  tracking-[-0.01em] text-center text-lg sm:text-2xl">
+           Explore our wide range of property types and find your perfect match
         </p>
         <div className="mt-12 grid grid-cols-2 gap-6 sm:mt-18 sm:gap-y-8 md:grid-cols-5 lg:grid-cols-6 ">
           {slicedCategories.map((category, index) => (

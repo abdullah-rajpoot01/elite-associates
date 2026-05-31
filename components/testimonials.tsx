@@ -5,57 +5,51 @@ import { cn } from "@/lib/utils";
 const testimonials = [
   {
     id: 1,
-    name: "John Doe",
-    designation: "Software Engineer",
-    company: "TechCorp",
+    name: "Zoya Khan",
+    designation: "First-Time Home Buyer",
+    company: "Bought in Brooklyn Heights",
     testimonial:
-      "This product has completely transformed the way we work. The efficiency and ease of use are unmatched!",
-    avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+      "The team made finding our first home incredibly easy. The virtual tours and detailed listings helped us narrow down our choices before even stepping foot outside.",
   },
   {
     id: 2,
-    name: "Sophia Lee",
-    designation: "Data Analyst",
-    company: "InsightTech",
+    name: "Muhammad Ahmad",
+    designation: "Investment Property Owner",
+    company: "Purchased 3 Properties",
     testimonial:
-      "This tool has saved me hours of work! The analytics and reporting features are incredibly powerful.",
-    avatar: "https://randomuser.me/api/portraits/women/6.jpg",
+      "I've bought multiple investment properties through this agency. Their market insights and property comparisons are unmatched. Saved me thousands!",
   },
   {
     id: 3,
-    name: "Michael Johnson",
-    designation: "UX Designer",
-    company: "DesignPro",
+    name: "Ayesha Ali",
+    designation: "Relocating Professional",
+    company: "Moved from Chicago to Miami",
     testimonial:
-      "An amazing tool that simplifies complex tasks. Highly recommended for professionals in the industry.",
-    avatar: "https://randomuser.me/api/portraits/men/3.jpg",
+      "Relocating to a new city was stressful, but the interactive maps and neighborhood insights helped me find the perfect area for my family.",
   },
   {
     id: 4,
-    name: "Emily Davis",
-    designation: "Marketing Specialist",
-    company: "BrandBoost",
+    name: "Zeshan Malik",
+    designation: "Selling Homeowner",
+    company: "Sold in 2 Weeks",
     testimonial:
-      "I've seen a significant improvement in our team's productivity since we started using this service.",
-    avatar: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Our home sold in just 2 weeks! The professional photography and virtual tour attracted multiple offers above asking price.",
   },
   {
     id: 5,
-    name: "Daniel Martinez",
-    designation: "Full-Stack Developer",
-    company: "CodeCrafters",
+    name: "Haider Ali",
+    designation: "Growing Family",
+    company: "Found Dream Home",
     testimonial:
-      "The best investment we've made! The support team is also super responsive and helpful.",
-    avatar: "https://randomuser.me/api/portraits/men/5.jpg",
+      "After months of searching elsewhere, we found our dream home here. The saved searches and instant alerts made sure we didn't miss any listings.",
   },
   {
     id: 6,
-    name: "Jane Smith",
-    designation: "Product Manager",
-    company: "InnovateX",
+    name: "Zohaib Khan",
+    designation: "Retiree",
+    company: "Downsizing to Condo",
     testimonial:
-      "The user experience is top-notch! The interface is clean, intuitive, and easy to navigate.",
-    avatar: "https://randomuser.me/api/portraits/women/2.jpg",
+      "The agents were patient and knowledgeable. They helped us find a low-maintenance condo that fits our retirement lifestyle perfectly.",
   },
 ];
 
@@ -90,7 +84,7 @@ const Testimonials = () => (
               </p>
               <div className="mt-auto flex items-center justify-center gap-3">
                 <Avatar className="size-9">
-                  <AvatarFallback className="bg-primary font-medium text-primary-foreground text-xl">
+                  <AvatarFallback className="bg-primary font-medium text-primary-foreground text-xl group-hover:animate-pulse">
                     {testimonial.name.charAt(0)}
                   </AvatarFallback>
                 </Avatar>

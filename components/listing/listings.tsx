@@ -1,7 +1,5 @@
 import PropertyCard from "./card";
 import { PropertyListing } from "@/content/data";
-import LoadMoreButton from "./load-more";
-import RelatedCategories from "../categories/related-categories";
 
 interface ListingSectionProp {
     listings: PropertyListing[]
@@ -16,10 +14,7 @@ const Listing = ({ listings }: ListingSectionProp) => {
 
     return (
         <div className="mx-auto max-w-(--breakpoint-xl) px-6 py-8 xl:px-0">
-            <div className="flex flex-col items-center text-center py-5">
-                <strong className="font-medium text-muted-foreground text-sm uppercase tracking-wide">
-                   Best Properties
-                </strong>
+            <div className="flex flex-col items-center text-center pb-8">
                 <h2 className="mx-auto mt-5 w-full text-balance font-medium text-2xl tracking-[-0.04em] text-center">
                     Find Your Dream Property – Houses, Apartments & Plots
                 </h2>
@@ -37,7 +32,6 @@ const Listing = ({ listings }: ListingSectionProp) => {
                     />
                 ))}
             </div>
-            <RelatedCategories/>
         </div>
     );
 };

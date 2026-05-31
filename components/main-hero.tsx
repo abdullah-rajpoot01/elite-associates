@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Medal, User } from "lucide-react";
 import Link from "next/link";
 import { WhatsApp } from "./social-icons";
+import ButtonNeon from "./ui/neon-button";
 
 const HeroSection2 = () => {
   return (
@@ -26,12 +27,12 @@ const HeroSection2 = () => {
 
             <div className="flex flex-wrap items-center justify-center gap-4 lg:justify-start">
               <Link href={"/listings"} >
-                <Button
+                <ButtonNeon
                   size="lg"
                   className="h-10 px-12 md:px-8 cursor-pointer hover:animate-tada hover:animate-iteration-count-once"
                 >
-                  View All Listings 
-                </Button>
+                  View All Properties 
+                </ButtonNeon>
               </Link>
               <Link href={"/about-us"} >
                 <Button

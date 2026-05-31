@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { PropertyListing, ContactInfo } from "@/content/data";
 import { WhatsApp } from "../social-icons";
 import Link from "next/link";
+import ButtonNeon from "../ui/neon-button";
 
 interface PropertyCardProps {
     listing: PropertyListing;
@@ -64,7 +65,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ listing, contact }) => {
     return (
         <Card className="w-full gap-0 overflow-hidden rounded-lg py-0 shadow-none flex flex-col h-full">
             <CardHeader className="relative p-0 shrink-0">
-                <Link href={`/listings/${listing.id}`} className="block">
+                <Link href={`/listings/${listing.purpose}/${listing.id}`} className="block">
                     <div className="relative aspect-video w-full border-b overflow-hidden bg-gray-100">
                         <img
                             alt={listing.title}
@@ -87,12 +88,15 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ listing, contact }) => {
                 </Link>
             </CardHeader>
             <CardContent className="p-4 flex flex-col grow gap-1">
-                <Link href={`/listings/${listing.id}`} className="flex flex-col grow gap-1">
-                    {listing.category && <div className="flex items-center gap-3">
-                        <Badge className="bg-primary/5 text-[10px] text-primary shadow-none hover:bg-primary/5">
+                <Link href={`/listings/${listing.purpose}/${listing.id}`} className="flex flex-col grow gap-1">
+                    <div className="flex items-center gap-1 mb-1">
+                        {listing.category && <Badge className="bg-primary/5 text-[10px] text-primary shadow-none hover:bg-primary/5">
                             {formatSlug(listing.category)}
-                        </Badge>
-                    </div>}
+                        </Badge>}
+                        {listing.purpose && <Badge className="bg-primary/5 text-[10px] text-primary shadow-none hover:bg-primary/5">
+                            {formatSlug(listing.purpose)}
+                        </Badge>}
+                    </div>
 
                     <h3 className="font-medium text-sm tracking-[-0.02em] line-clamp-1">
                         <span className="text-md">{listing.price.currency}</span> {formattedAmount}
@@ -128,12 +132,12 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ listing, contact }) => {
                     >
                         <Mail className="size-4" /> Email
                     </Button>}
-                    {contactInfo?.phone && <Button
-                        className="shadow-none bg-primary text-primary-foreground hover:animate-pop hover:animate-iteration-count-infinite"
+                    {contactInfo?.phone && <ButtonNeon
+                        className="shadow-none hover:animate-pop hover:animate-iteration-count-infinite"
                         onClick={handleCallClick}
                     >
                         <Phone className="size-4" /> Call
-                    </Button>}
+                    </ButtonNeon>}
                 </div>
             </CardContent>
         </Card>

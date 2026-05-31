@@ -8,6 +8,7 @@ import CarouselWithProgress from "../listoverview-images-carousal";
 import { WhatsApp } from "../social-icons";
 import ShowMoreCollapsible from "../collapsible-02";
 import ImagesGalleryDialog from "./zoom-images";
+import { Badge } from "../ui/badge";
 
 const formatSlug = (category: string): string => {
     return category.replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
@@ -66,11 +67,19 @@ const ListingOverView = ({ listing, contact }: ListingOverViewProps) => {
                     {/* Sticky Image Section */}
                     <div className="lg:col-span-1 lg:sticky lg:top-18 lg:self-start relative">
                         <CarouselWithProgress />
-                        <ImagesGalleryDialog images={listing.images}/>
+                        <ImagesGalleryDialog images={listing.images} />
                     </div>
-                    
+
                     {/* Scrollable Content Section */}
                     <div className="flex flex-col gap-4 lg:col-span-2">
+                        <div className="flex items-center gap-1 mb-1">
+                            {listing.category && <Badge className="bg-primary/5 text-[10px] text-primary shadow-none hover:bg-primary/5">
+                                {formatSlug(listing.category)}
+                            </Badge>}
+                            {listing.purpose && <Badge className="bg-primary/5 text-[10px] text-primary shadow-none hover:bg-primary/5">
+                                {formatSlug(listing.purpose)}
+                            </Badge>}
+                        </div>
                         <div className="text-center lg:text-left">
                             <h1 className="text-4xl text-pretty text-foreground/90">
                                 {listing.title}
@@ -133,7 +142,7 @@ const ListingOverView = ({ listing, contact }: ListingOverViewProps) => {
                             {/* <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                                 {listing.description}
                             </p> */}
-                            <ShowMoreCollapsible description={listing.description}/>
+                            <ShowMoreCollapsible description={listing.description} />
                         </div>
 
                         <div className="space-y-3 mt-6">
@@ -154,7 +163,7 @@ const ListingOverView = ({ listing, contact }: ListingOverViewProps) => {
                                 ))}
                             </div>
                         </div>
-                        
+
                         <div className="space-y-3 mt-6">
                             <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-gray-100">
                                 Location

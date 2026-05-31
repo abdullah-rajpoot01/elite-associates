@@ -32,7 +32,7 @@ const LoadMoreButton: React.FC<LoadMoreButtonProps> = ({
         <div className='w-full flex justify-center items-center mt-12'>
             <Link href={url}>
                 <ButtonNeon
-                    className={`group ${className} hover:animate-tada hover:animate-iteration-count-once`}
+                    className={`group ${className} hover:animate-tada hover:animate-iteration-count-once capitalize`}
                     onClick={handleLoadMore}
                     disabled={isLoading}
                 >
