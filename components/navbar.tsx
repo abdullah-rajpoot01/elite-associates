@@ -223,9 +223,9 @@ const Navbar1 = ({
                                         </Accordion>
 
                                         <div className="flex flex-col gap-3">
-                                            <Button asChild>
+                                            <ButtonNeon asChild>
                                                 <Link href={cta.primary.url}>{cta.primary.title}</Link>
-                                            </Button>
+                                            </ButtonNeon>
                                         </div>
                                     </div>
                                 </SheetContent>
@@ -271,11 +271,11 @@ const renderMenuItem = (item: MenuItem) => {
 const renderMobileMenuItem = (item: MenuItem, hideSidebar: () => void) => {
     if (item.items) {
         return (
-            <AccordionItem key={item.title} value={item.title} className="border-b-0">
+            <AccordionItem key={item.title} value={item.title} className="border-b-0!">
                 <AccordionTrigger className="text-md py-0 font-semibold hover:no-underline">
                     {item.title}
                 </AccordionTrigger>
-                <AccordionContent className="mt-2  ">
+                <AccordionContent className="mt-2">
                     {item.items.map((subItem) => (
                         <SubMenuLink
                             hideSidebar={hideSidebar}
