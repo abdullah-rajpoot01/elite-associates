@@ -15,7 +15,7 @@ const HeroSection2 = () => {
           <div className="flex flex-col gap-6 items-center lg:items-start">
            
             <div className="flex flex-col gap-4 text-center lg:text-left">
-              <h1 className="text-2xl font-bold tracking-tight text-balance md:text-5xl text-foreground animate-sink animate-duration-1000 animate-delay-150 ">
+              <h1 className="text-2xl font-bold tracking-tight text-balance md:text-5xl text-foreground">
                 <span className="text-primary  ">Elite Associates</span>  Buy, Sell & Invest with Confidence
                 Online
               </h1>
@@ -25,10 +25,10 @@ const HeroSection2 = () => {
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-4 lg:justify-start">
-              <Link href={"/pricing"} >
+              <Link href={"/listings"} >
                 <Button
                   size="lg"
-                  className="h-10 px-12 md:px-8 cursor-pointer "
+                  className="h-10 px-12 md:px-8 cursor-pointer hover:animate-tada hover:animate-iteration-count-once"
                 >
                   View All Listings 
                 </Button>
@@ -36,7 +36,7 @@ const HeroSection2 = () => {
               <Link href={"/about-us"} >
                 <Button
                   size="lg" variant={"outline"}
-                  className="h-10 px-8 cursor-pointer"
+                  className="h-10 px-8 cursor-pointer hover:animate-tada hover:animate-iteration-count-once"
                 >
                 <User className="size-5"/> About Us
                 </Button>

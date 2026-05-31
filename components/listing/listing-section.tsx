@@ -1,7 +1,6 @@
 import PropertyCard from "./card";
 import { PropertyListing } from "@/content/data";
 import LoadMoreButton from "./load-more";
-import RelatedCategories from "../categories/related-categories";
 
 interface ListingSectionProp {
     listings: PropertyListing[]
@@ -15,17 +14,11 @@ const Listing = ({ listings }: ListingSectionProp) => {
     };
 
     return (
-        <div className="mx-auto max-w-(--breakpoint-xl) px-6 py-8 xl:px-0">
-            <div className="flex flex-col items-center text-center py-5">
-                <strong className="font-medium text-muted-foreground text-sm uppercase tracking-wide">
-                   Best Properties
-                </strong>
-                <h2 className="mx-auto mt-5 w-full text-balance font-medium text-2xl tracking-[-0.04em] text-center">
-                    Find Your Dream Property – Houses, Apartments & Plots
+        <div className="mx-auto max-w-(--breakpoint-xl) px-6 py-12 xl:px-0">
+            <div className="flex items-end justify-between">
+                <h2 className="font-medium text-[1.5rem] tracking-tight">
+                    Recommended Properties
                 </h2>
-                <p className="mt-5 text-muted-foreground text-xl tracking-[-0.01em] ">
-                    Browse Verified Properties for Sale & Rent
-                </p>
             </div>
 
             <div className="mt-4 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -33,11 +26,14 @@ const Listing = ({ listings }: ListingSectionProp) => {
                     <PropertyCard
                         key={listing.id}
                         listing={listing}
+                        // Option 1: Use specific contact per card (overrides listing's own contact)
                         contact={fallbackContact}
                     />
                 ))}
             </div>
-            <RelatedCategories/>
+
+            <LoadMoreButton text="view all listing" url="/listing" />
+
         </div>
     );
 };

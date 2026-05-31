@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar1 } from "@/components/navbar";
 import Footer1 from "@/components/footer-1";
+import NextTopLoader from "nextjs-toploader";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Navbar1 />
         {children}
         <Footer1/>
+        <NextTopLoader showForHashAnchor={false} />
       </body>
     </html>
   );

@@ -5,29 +5,30 @@ import {
   ShieldCheckIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const plusPoints = [
   {
-   
-    ctaText:"Buy Now",
-    ctaUrl:"#",
+
+    ctaText: "Buy Now",
+    ctaUrl: "/listings",
     title: "Buy a property",
-    image:"https://www.graana.com/home-page-images/buy.svg",
+    image: "https://www.graana.com/home-page-images/buy.svg",
     description:
       "Find where “perfect”meets “happy”",
   },
   {
-    ctaText:"Sell Now",
-    ctaUrl:"#",
+    ctaText: "Sell Now",
+    ctaUrl: "#",
     title: "Sell a property",
-    image:"https://www.graana.com/home-page-images/sell.svg",
+    image: "https://www.graana.com/home-page-images/sell.svg",
     description: "Get the best valuein any economy",
   },
   {
-    ctaText:"Rent Property Now",
-    ctaUrl:"#",
+    ctaText: "Rent Property Now",
+    ctaUrl: "#",
     title: "Rent a property",
-    image:"https://www.graana.com/home-page-images/rent.svg",
+    image: "https://www.graana.com/home-page-images/rent.svg",
     description: "Live where you can love",
   },
 ];
@@ -38,13 +39,13 @@ export default function BuySellSection() {
       className="mx-auto max-w-(--breakpoint-xl)  px-2 lg:px-12 py-24 text-center "
       id="why-choose-us"
     >
-       <strong className="font-medium text-muted-foreground text-sm uppercase tracking-wide">
+      <strong className="font-medium text-muted-foreground text-sm uppercase tracking-wide">
         Why Choose Us
       </strong>
       <h2 className="mx-auto mt-5 max-w-4xl text-balance font-medium text-4xl/tight tracking-[-0.04em] sm:text-[2.75rem]">
         We are Leading in Smart Assistants with Nearly 20 Years of Experience
       </h2>
-      <p className="mt-5 text-muted-foreground text-xl -tracking-[0.01em] sm:text-2xl">
+      <p className="mt-5 text-muted-foreground text-xl tracking-[-0.01em] sm:text-2xl">
         We are constantly always keep pace with the time.
       </p>
       <div className="mt-16  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 bg-background rounded-md p-5">
@@ -64,9 +65,10 @@ export default function BuySellSection() {
               <p className="text-balance text-base text-muted-foreground">
                 {plusPoint.description}
               </p>
-              <Button className="mt-6">
-               {plusPoint.ctaText} <ArrowUpRightIcon />
+              <Link href={plusPoint.ctaUrl}> <Button className="mt-6 hover:animate-jiggle hover:animate-iteration-count-infinite">
+                {plusPoint.ctaText} <ArrowUpRightIcon />
               </Button>
+              </Link>
             </div>
           </div>
         ))}

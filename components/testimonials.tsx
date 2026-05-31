@@ -60,7 +60,7 @@ const testimonials = [
 ];
 
 const Testimonials = () => (
-  <div className="px-6 py-20">
+  <div className="px-6 py-20 bg-background">
     <div>
       <h2 className="text-center font-medium text-4xl tracking-[-0.04em] md:text-[2.75rem]">
         Loved by Customers
@@ -73,12 +73,12 @@ const Testimonials = () => (
           {testimonials.map((testimonial) => (
             <div
               className={cn(
-                "relative flex flex-col px-6 py-10",
+                "relative flex flex-col px-6 py-10 group",
                 "before:absolute before:inset-0 before:-m-px before:border-border before:border-r before:border-b before:border-dashed before:content-['']"
               )}
               key={testimonial.id}
             >
-              <div className="flex items-center justify-center gap-1">
+              <div className="flex items-center justify-center gap-1 group-hover:animate-float group-hover:animate-iteration-count-infinite">
                 <StarIcon className="h-6 w-6 fill-yellow-500 stroke-yellow-500" />
                 <StarIcon className="h-6 w-6 fill-yellow-500 stroke-yellow-500" />
                 <StarIcon className="h-6 w-6 fill-yellow-500 stroke-yellow-500" />

@@ -60,7 +60,7 @@ const ListingOverView = ({ listing, contact }: ListingOverViewProps) => {
     };
 
     return (
-        <section className={cn("py-4 px-6 md:px-14")}>
+        <section className={cn("py-10 px-6 md:px-14")}>
             <div className="container mx-auto">
                 <div className="grid gap-10 lg:grid-cols-3 lg:gap-20">
                     {/* Sticky Image Section */}
@@ -81,20 +81,20 @@ const ListingOverView = ({ listing, contact }: ListingOverViewProps) => {
                             <div className="flex gap-2 flex-wrap justify-center lg:justify-start pt-4" onClick={(e) => e.stopPropagation()}>
                                 {contactInfo?.whatsapp && <Button
                                     variant="outline"
-                                    className="shadow-none border border-primary text-primary hover:text-primary/90"
+                                    className="shadow-none border border-primary text-primary hover:text-primary/90 hover:animate-tada hover:animate-iteration-count-twice"
                                     onClick={handleWhatsAppClick}
                                 >
                                     <WhatsApp className="size-4 text-primary" /> Whatsapp
                                 </Button>}
                                 {contactInfo?.email && <Button
                                     variant="outline"
-                                    className="shadow-none border border-primary text-primary hover:text-primary/90"
+                                    className="shadow-none border border-primary text-primary hover:text-primary/90 hover:animate-tada hover:animate-iteration-count-twice"
                                     onClick={handleEmailClick}
                                 >
                                     <Mail className="size-4" /> Email
                                 </Button>}
                                 {contactInfo?.phone && <Button
-                                    className="shadow-none bg-primary text-primary-foreground"
+                                    className="shadow-none bg-primary text-primary-foreground hover:animate-tada hover:animate-iteration-count-twice"
                                     onClick={handleCallClick}
                                 >
                                     <Phone className="size-4" /> Call

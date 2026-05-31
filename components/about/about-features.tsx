@@ -48,18 +48,18 @@ const features = [
 
 const AboutFeatures = () => {
   return (
-    <div className="mx-auto flex max-w-7xl flex-col px-6 py-20 ">
+    <div className="mx-auto flex max-w-7xl flex-col px-6 py-20 overflow-x-hidden bg-background">
       <h2 className="text-pretty text-center font-medium text-4xl tracking-[-0.04em] sm:text-[2.75rem]">
         Engineered for speed
       </h2>
-      <p className="mt-3 text-pretty text-center text-muted-foreground text-xl -tracking-[0.01em] sm:text-2xl">
+      <p className="mt-3 text-pretty text-center text-muted-foreground text-xl tracking-[-0.01em] sm:text-2xl">
         Designed for speed, flexibility, and ease of use
       </p>
 
       <div className="mt-20 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {features.map((feature, index) => (
           <div
-            className="relative rounded-xl border bg-card p-6 dark:border-card-foreground/7 "
+            className="relative rounded-xl border bg-card p-6 dark:border-card-foreground/7 hover:animate-pulsing hover:animate-iteration-count-infinite"
             key={index}
           >
             <div className="absolute -top-4 left-3 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground ">

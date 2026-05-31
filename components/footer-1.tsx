@@ -47,7 +47,7 @@ const Footer1 = () => {
   ];
 
   return (
-    <div className="px-6 relative text-foreground">
+    <div className="px-6 relative text-foreground bg-accent">
       {/* <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-[#1a1a1c] bg-[radial-gradient(#bfdbfe_1px,transparent_1px)] dark:bg-[radial-gradient(#f5f5f0_1px,transparent_1px)] bg-size-[16px_16px]"></div> */}
 
       <div className="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-gray-500/30 ">

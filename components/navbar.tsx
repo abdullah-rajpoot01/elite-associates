@@ -1,29 +1,10 @@
 "use client";
 
 import {
-    LayoutTemplate,
     Menu,
-    Palette,
     Building2,
-    ShoppingCart,
-    FolderOpen,
-    RefreshCw,
-    Code,
     Eye,
-    Diamond,
-    Megaphone,
-    Image,
-    CreditCard,
-    Package,
     FileText,
-    Presentation,
-    MapPin,
-    TrendingUp,
-    Camera,
-    Calendar,
-    Star,
-    BarChart,
-    Users,
     Phone,
     HelpCircle,
     Shield,
@@ -97,107 +78,11 @@ const Navbar1 = ({
     },
     menu = [
         { title: "Home", url: "/" },
-        {
-            title: "Properties",
-            url: "#",
-            items: [
-                {
-                    title: "Home Living",
-                    description: "Residential houses and apartments.",
-                    icon: <Home className="size-5 shrink-0" />,
-                    url: "/website-design#landing-page-design",
-                },
-                {
-                    title: "Plot Land",
-                    description: "Plots for building or investment.",
-                    icon: <LandPlot className="size-5 shrink-0" />,
-                    url: "/website-design#business-website-design",
-                },
-                {
-                    title: "Retail Shops",
-                    description: "Shops for business use.",
-                    icon: <Store className="size-5 shrink-0" />,
-                    url: "/website-design#ecommerce-stores",
-                },
-                {
-                    title: "Open Land",
-                    description: "Land for farming or investment.",
-                    icon: <Landmark className="size-5 shrink-0" />,
-                    url: "/website-design#portfolio-websites",
-                },
-                {
-                    title: "Luxury Flats",
-                    description:
-                        "Premium modern apartments.",
-                    icon: <Grid className="size-5 shrink-0" />,
-                    url: "/website-design#website-redesign",
-                },
-                {
-                    title: "Commercial Space",
-                    description:
-                        "Offices and business properties.",
-                    icon: <Building2 className="size-5 shrink-0" />,
-                    url: "/website-design#custom-websites",
-                },
-                {
-                    title: "Farm Houses",
-                    description:
-                        "Countryside luxury living spaces.",
-                    icon: <HouseIcon className="size-5 shrink-0" />,
-                    url: "/website-design#custom-websites",
-                },
-                {
-                    title: "View all services",
-                    description:
-                        "Explore all our website design and development services.",
-                    icon: <Eye className="size-5 shrink-0" />,
-                    url: "/website-design",
-                },
-            ],
-        },
-        { title: "About Us", url: "/about-us" },
-        { title: "Contact Us", url: "/contact-us" },
-        {
-            title: "More Pages",
-            url: "#",
-            items: [
-                {
-                    title: "About Us",
-                    description:
-                        "Learn about our story, mission, and the team behind our creative solutions.",
-                    icon: <Users className="size-5 shrink-0" />,
-                    url: "/about-us",
-                },
-                {
-                    title: "Contact Us",
-                    description:
-                        "Get in touch with our team for inquiries, support, or project collaborations.",
-                    icon: <Phone className="size-5 shrink-0" />,
-                    url: "/contact-us",
-                },
-                {
-                    title: "Frequently Asked Questions",
-                    description:
-                        "Find answers to common questions about our services and processes.",
-                    icon: <HelpCircle className="size-5 shrink-0" />,
-                    url: "/faq",
-                },
-                {
-                    title: "Terms and Conditions",
-                    description:
-                        "Review the terms, conditions, and guidelines for using our services.",
-                    icon: <FileText className="size-5 shrink-0" />,
-                    url: "/terms-and-conditions",
-                },
-                {
-                    title: "Privacy Policy",
-                    description:
-                        "Understand how we collect, use, and protect your personal information.",
-                    icon: <Shield className="size-5 shrink-0" />,
-                    url: "/privacy-policy",
-                },
-            ],
-        },
+        { title: "Properties", url: "/listings" },
+        { title: "Categories", url: "/categories" },
+        { title: "About", url: "/about-us" },
+        { title: "Contact", url: "/contact-us" },
+       
     ],
     cta = {
         primary: { title: "Start a Call", url: "tel:+923046954705" },
@@ -222,7 +107,7 @@ const Navbar1 = ({
                 <nav className="hidden items-center justify-between lg:flex">
                     <div className="flex items-center  gap-6 py-2">
                         {/* Logo */}
-                        <Link href={logo.url} className="flex items-center  gap-2 ">
+                        <Link href={logo.url} className="flex items-center  gap-2 hover:animate-tada hover:animate-iteration-count-once">
                             <img
                                 src={logo.src}
                                 className="max-h-10 dark:invert object-cover"
@@ -230,7 +115,7 @@ const Navbar1 = ({
                             />
                         </Link>
                     </div>
-                    <div className="flex items-center justify-end ">
+                    <div className="flex items-center justify-end  ">
                         <NavigationMenu>
                             <NavigationMenuList>
                                 {menu.map((item) => renderMenuItem(item))}
@@ -238,14 +123,14 @@ const Navbar1 = ({
                         </NavigationMenu>
                     </div>
                     <div className="flex gap-2">
-                        <Link href={cta.primary.url} >
+                        <Link href={cta.primary.url} className="hover:animate-tada hover:animate-iteration-count-once" >
                             <Button asChild size="lg">
                                 <div className="flex gap-2">
                                     <Phone />{cta.primary.title}
                                 </div>
                             </Button>
                         </Link>
-                        <Link href={"https://wa.me/923046954705"} target="_blank"
+                        <Link href={"https://wa.me/923046954705"} className="hover:animate-tada hover:animate-iteration-count-once" target="_blank"
                             rel="noopener noreferrer">
                             <Button asChild size="lg">
                                 <WhatsApp className="w-10" />
@@ -352,7 +237,7 @@ const renderMenuItem = (item: MenuItem) => {
         <NavigationMenuItem key={item.title}>
             <Link
                 href={item.url}
-                className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground"
+                className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground hover:animate-tada hover:animate-iteration-count-once mr-1"
             >
                 {item.title}
             </Link>
