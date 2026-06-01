@@ -1,7 +1,63 @@
 import PropertyCard from '@/components/listing/card';
 import { listings } from '@/content/data';
 import { notFound } from 'next/navigation';
+import type { Metadata } from "next";
 
+type Props = {
+  params: Promise<{ type: "for-sale" | "for-rent" | string }>;
+};
+
+export async function generateMetadata(
+  { params }: Props
+): Promise<Metadata> {
+  const { type } = await params;
+
+  const isForSale = type === "for-sale";
+  const isForRent = type === "for-rent";
+
+  if (!isForSale && !isForRent) {
+    return {
+      title: "Properties | Elite Associates",
+      description: "Browse real estate properties with Elite Associates.",
+    };
+  }
+
+  const title = isForSale
+    ? "Properties for Sale | Elite Associates Real Estate"
+    : "Properties for Rent | Elite Associates Real Estate";
+
+  const description = isForSale
+    ? "Explore properties available for sale including houses, villas, plots, and commercial spaces. Find your perfect investment with Elite Associates."
+    : "Browse rental properties including houses, apartments, and commercial spaces. Find affordable and premium rentals with Elite Associates.";
+
+  return {
+    title,
+    description,
+
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      images: [
+        {
+          url: "/og-default.png",
+          width: 1200,
+          height: 630,
+          alt: isForSale
+            ? "Properties for Sale"
+            : "Properties for Rent",
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/og-default.png"],
+    },
+  };
+}
 // 1. Define the parameters type
 export type CategoryParams = {
   type: "for-sale" | "for-rent";

@@ -1,9 +1,60 @@
 import { EmptyCategory } from '@/components/categories/empty-category';
 import PropertyCard from '@/components/listing/card';
-import Listing from '@/components/listing/listings';
 import { categories, listings } from '@/content/data';
 import { Search } from 'lucide-react';
 import { notFound } from 'next/navigation';
+import type { Metadata } from "next";
+
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
+export async function generateMetadata(
+  { params }: Props
+): Promise<Metadata> {
+  const { slug } = await params;
+
+  const category = categories.find((c) => c.slug === slug);
+
+  if (!category) {
+    return {
+      title: "Category Not Found | Elite Associates",
+      description: "The requested property category could not be found.",
+    };
+  }
+
+  const title = `${category.name} Properties | Elite Associates`;
+
+  const description =
+    category.description ??
+    `Browse ${category.name.toLowerCase()} listings at Elite Associates. Find the best properties available for sale and rent.`;
+
+  return {
+    title,
+    description,
+
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      images: [
+        {
+          url: category.image,
+          width: 1200,
+          height: 630,
+          alt: category.name,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [category.image],
+    },
+  };
+}
 
 // 1. Define the parameters type based on the folder [slug]
 export type CategoryPageParams = {

@@ -113,7 +113,7 @@ export const categories: Category[] = [
     {
         name: "Offices",
         description: "Office spaces, retail shops, warehouses, and commercial buildings for business",
-        image: "/listings/fi1.webp",
+        image: "/listings/f2i1.webp",
         slug: "Offices"
     },
     {

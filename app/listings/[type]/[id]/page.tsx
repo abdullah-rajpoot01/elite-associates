@@ -2,7 +2,63 @@ import ListingOverView from '@/components/listing/listing-overview';
 import RelatedListing from '@/components/listing/related-listings';
 import { listings } from '@/content/data';
 import { notFound } from 'next/navigation';
+import type { Metadata } from "next";
 
+
+type Props = {
+  params: Promise<{
+    type: "for-sale" | "for-rent";
+    id: string;
+  }>;
+};
+
+export async function generateMetadata(
+  { params }: Props
+): Promise<Metadata> {
+  const { type, id } = await params;
+
+  const listing = listings.find(
+    (item) => item.id === id && item.purpose === type
+  );
+
+  if (!listing) {
+    return {
+      title: "Property Not Found",
+      description: "The requested property could not be found.",
+    };
+  }
+
+  const title = `${listing.title} | ${listing.location.city}`;
+
+  const description =
+    listing.description ??
+    `${listing.category} available ${
+      type === "for-sale" ? "for sale" : "for rent"
+    } in ${listing.location.area}, ${listing.location.city}.`;
+
+  return {
+    title,
+    description,
+
+    openGraph: {
+      title,
+      description,
+      images: [
+        {
+          url: listing.thumbnail,
+          alt: listing.title,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [listing.thumbnail],
+    },
+  };
+}
 
 // 1. Define the structural type matching your route parameters
 export type ListingParams = {

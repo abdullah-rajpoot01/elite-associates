@@ -18,11 +18,35 @@ import {
   HeartHandshake
 } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Terms and Conditions | Your Company Name',
-  description: 'Read our terms and conditions to understand the rules and regulations governing your use of our services.',
-};
 
+export const metadata: Metadata = {
+  title: "Terms & Conditions | Elite Associates Real Estate",
+  description:
+    "Read the Terms & Conditions of Elite Associates Real Estate Agency to understand the rules, responsibilities, and conditions for using our services.",
+
+  openGraph: {
+    title: "Terms & Conditions | Elite Associates Real Estate",
+    description:
+      "Read the Terms & Conditions of Elite Associates Real Estate Agency to understand the rules, responsibilities, and conditions for using our services.",
+    type: "website",
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Elite Associates Terms and Conditions",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms & Conditions | Elite Associates Real Estate",
+    description:
+      "Read the Terms & Conditions of Elite Associates Real Estate Agency to understand the rules and usage policies of our services.",
+    images: ["/og-default.png"],
+  },
+};
 // Data structure for the terms and conditions page
 const termsData = {
   lastUpdated: 'May 11, 2026',

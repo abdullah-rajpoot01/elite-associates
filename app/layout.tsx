@@ -18,9 +18,38 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata: Metadata = {
   title: "Elite Associates | Find Your Dream Land",
-  description: "Elite Associates | Find Your Dream Land",
+  description:
+    "Elite Associates Real Estate Agency helps you buy, sell, and invest in residential and commercial properties with expert guidance and transparent, hassle-free service.",
+
+  metadataBase: new URL("https://eliteassociates.pages.dev"),
+
+  openGraph: {
+    title: "Elite Associates | Find Your Dream Land",
+    description:
+      "Elite Associates Real Estate Agency helps you buy, sell, and invest in residential and commercial properties with expert guidance and transparent, hassle-free service.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Elite Associates",
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Elite Associates Real Estate",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Elite Associates | Find Your Dream Land",
+    description:
+      "Elite Associates Real Estate Agency helps you buy, sell, and invest in residential and commercial properties with expert guidance and transparent, hassle-free service.",
+    images: ["/og-default.png"],
+  },
 };
 
 export default function RootLayout({
@@ -36,7 +65,7 @@ export default function RootLayout({
       <body suppressHydrationWarning className="min-h-full flex flex-col max-w-7xl mx-auto">
         <Navbar1 />
         {children}
-        <Footer1/>
+        <Footer1 />
         <NextTopLoader showForHashAnchor={false} />
       </body>
     </html>

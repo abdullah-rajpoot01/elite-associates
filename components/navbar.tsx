@@ -3,17 +3,7 @@
 import {
     Menu,
     Building2,
-    Eye,
-    FileText,
     Phone,
-    HelpCircle,
-    Shield,
-    Home,
-    LandPlot,
-    Store,
-    HouseIcon,
-    Grid,
-    Landmark,
     LayoutTemplate,
 } from "lucide-react";
 import { } from "lucide-react";
@@ -173,7 +163,7 @@ const Navbar1 = ({
                         >
                             <img
                                 src={"/text-logo.png"}
-                                className="max-h-10 dark:invert"
+                                className="max-h-10 dark:invert "
                                 alt={logo.alt}
                             />
                         </Link>
@@ -205,7 +195,7 @@ const Navbar1 = ({
                                             >
                                                 <img
                                                     src={"text-logo.png"}
-                                                    className="max-h-24 dark:invert"
+                                                    className="max-h-15 dark:invert rounded-lg"
                                                     alt={logo.alt}
                                                 />
                                             </Link>
@@ -223,9 +213,9 @@ const Navbar1 = ({
                                         </Accordion>
 
                                         <div className="flex flex-col gap-3">
-                                            <ButtonNeon asChild>
+                                            <Button asChild>
                                                 <Link href={cta.primary.url}>{cta.primary.title}</Link>
-                                            </ButtonNeon>
+                                            </Button>
                                         </div>
                                     </div>
                                 </SheetContent>

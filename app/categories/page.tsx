@@ -1,5 +1,36 @@
 import { categories } from '@/content/data'
 import Link from 'next/link'
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Property Categories | Elite Associates",
+  description:
+    "Browse property categories including houses, villas, offices, plots, and farm houses. Find the perfect property type with Elite Associates Real Estate.",
+
+  openGraph: {
+    title: "Property Categories | Elite Associates",
+    description:
+      "Browse property categories including houses, villas, offices, plots, and farm houses. Find the perfect property type with Elite Associates Real Estate.",
+    type: "website",
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Elite Associates Property Categories",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Property Categories | Elite Associates",
+    description:
+      "Browse property categories including houses, villas, offices, plots, and farm houses. Find the perfect property type with Elite Associates Real Estate.",
+    images: ["/og-default.png"],
+  },
+};
+
 
 const Page = () => {
     return (

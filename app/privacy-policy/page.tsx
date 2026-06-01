@@ -13,9 +13,33 @@ import {
   AlertTriangle 
 } from 'lucide-react';
 
+
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Your Company Name',
-  description: 'Learn how we collect, use, and protect your personal information. Read our comprehensive privacy policy.',
+  title: "Privacy Policy | Elite Associates Real Estate",
+  description:
+    "Read the Privacy Policy of Elite Associates Real Estate Agency to understand how we collect, use, and protect your personal information when you use our services.",
+  openGraph: {
+    title: "Privacy Policy | Elite Associates Real Estate",
+    description:
+      "Read the Privacy Policy of Elite Associates Real Estate Agency to understand how we collect, use, and protect your personal information when you use our services.",
+    type: "website",
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Elite Associates Privacy Policy",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Elite Associates Real Estate",
+    description:
+      "Read the Privacy Policy of Elite Associates Real Estate Agency to understand how we collect, use, and protect your personal information.",
+    images: ["/og-default.png"],
+  },
 };
 
 // Data structure for the privacy policy page
