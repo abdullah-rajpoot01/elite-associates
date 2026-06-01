@@ -9,17 +9,12 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "@/components/ui/carousel"; 
 
-const images = [
-  "https://media.zameen.com/thumbnails/281239814-800x600.webp",
-  "https://media.zameen.com/thumbnails/297610782-800x600.webp",
-  "https://media.zameen.com/thumbnails/297496378-800x600.webp",
-  "https://media.zameen.com/thumbnails/297279234-800x600.webp",
-  "https://media.zameen.com/thumbnails/297592759-800x600.webp",
-];
-
-export default function CarouselWithThumbs() {
+interface CarouselPropType {
+  images: string[];
+}
+export default function CarouselWithThumbs({images}:CarouselPropType) {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
 

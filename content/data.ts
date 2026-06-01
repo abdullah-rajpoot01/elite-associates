@@ -21,6 +21,8 @@ export type ContactInfo = {
 };
 
 
+
+
 export type PropertyListing = {
     id: string;
 
@@ -81,13 +83,13 @@ export const categories: Category[] = [
     {
         name: "Luxury Villas",
         description: "Premium villas with modern amenities, swimming pools, and prime locations in gated communities",
-        image: "https://media.zameen.com/thumbnails/297592759-800x600.webp",
+        image: "/listings/Gemini_Generated_Image_x51bk6x51bk6x51b.webp",
         slug: "luxury-villas"
     },
     {
         name: "Apartments",
         description: "Modern apartments ranging from studios to penthouses in prime city locations",
-        image: "https://media.zameen.com/thumbnails/297496378-800x600.webp",
+        image: "/listings/Gemini_Generated_Image_x51bk6x51bk6x51b.webp",
         slug: "apartments"
     },
     {
@@ -123,797 +125,784 @@ export const categories: Category[] = [
 ];
 export const listings: PropertyListing[] = [
     {
-        id: "PROP-1001",
-        title: "Luxury Modern Villa in DHA Lahore",
-        description: "Beautiful 5-bedroom luxury villa with modern architecture, swimming pool, and premium finishes. Located in the heart of DHA Phase 6.",
-        category: "luxury-villas",
+        id: "prop_dha_2026_001",
+        title: "1 Kanal Modern Luxury Ultra-Modern House for Sale",
+        description: "A stunning, brand-new 1 Kanal ultra-modern architectural masterpiece located in DHA Phase 2, Islamabad. Features imported fittings, double-height lobby, smart home automation, high-end kitchen appliances, and a beautiful rooftop terrace with a scenic view of the Margalla foothills.",
+        category: "House",
         purpose: "for-sale",
         badge: "hot",
         price: {
-            amount: 185000000,
+            amount: 85000000, // 8.5 Crore PKR
             currency: "PKR",
             period: null
         },
         location: {
-            city: "Lahore",
-            area: "DHA Phase 6",
-            address: "Block C, Main Boulevard",
-            coordinates: { lat: 31.4697, lng: 74.2728 }
+            city: "Islamabad",
+            area: "DHA Phase 2",
+            address: "Sector J, Street 14, DHA Phase 2, Islamabad",
+            coordinates: {
+                lat: 33.5352,
+                lng: 73.1428
+            }
         },
         contact: {
-            email: "agent@example.com",
+            email: "sales@eliteagents.com",
             whatsapp: "+923001234567",
-            phone: "+923001234567"
+            phone: "+92511234567"
         },
         details: [
             { name: "Bedrooms", value: 5 },
             { name: "Bathrooms", value: 6 },
-            { name: "Area", value: "2 Kanal" },
-            { name: "Parking", value: 4 },
-            { name: "Furnished", value: "Fully" }
+            { name: "Area Size", value: "1 Kanal" },
+            { name: "Stories", value: 2 },
+            { name: "Year Built", value: 2026 },
+            { name: "Parking Spaces", value: 3 }
         ],
-        amenities: ["swimming-pool", "gym", "garden", "security", "home-theater"],
+        amenities: [
+            "Smart Home Automation",
+            "Servant Quarter",
+            "Solar Panel System Setup",
+            "CCTV Security",
+            "Central Heating & Cooling",
+            "Jacuzzi",
+            "Rooftop BBQ Area"
+        ],
         images: [
-            "https://media.zameen.com/thumbnails/297592759-800x600.webp",
-            "https://media.zameen.com/thumbnails/294016160-800x600.webp",
-            "https://media.zameen.com/thumbnails/297279234-800x600.webp"
+            "/listings/h1i2.webp",
+            "/listings/h1i3.webp",
+            "/listings/h1i4.webp"
         ],
-        thumbnail: "https://media.zameen.com/thumbnails/297592759-800x600.webp",
+        thumbnail: "/listings/h1i1.webp",
         featured: true,
-        createdAt: "2026-05-15T10:00:00Z"
-    },
-    {
-        id: "PROP-1002",
-        title: "Modern Apartment in Gulberg",
-        description: "Spacious 2-bedroom apartment with city views, central AC, and 24/7 security. Prime location near MM Alam Road.",
-        category: "apartments",
-        purpose: "for-rent",
+        createdAt: "2026-06-01T09:12:26Z"
+    }, {
+        id: "prop_dha_2026_002",
+        title: "10 Marla Designer House for Sale - Phase 5",
+        description: "An elegant, structurally sound 10 Marla contemporary house situated in a highly secure block of DHA Phase 5, Islamabad. This property boasts a minimalist interior design, imported Spanish tile flooring, solid ash wood doors, and a compact manicured lawn. Perfect for a medium-sized family looking for a premium location near the commercial hub.",
+        category: "House",
+        purpose: "for-sale",
         badge: "new",
         price: {
-            amount: 150000,
-            currency: "PKR",
-            period: "monthly"
-        },
-        location: {
-            city: "Lahore",
-            area: "Gulberg III",
-            address: "MM Alam Road",
-            coordinates: { lat: 31.5204, lng: 74.3587 }
-        },
-        contact: {
-            email: "rentals@cityliving.com",
-            whatsapp: "+923001234568",
-            phone: "+923001234568"
-        },
-        details: [
-            { name: "Bedrooms", value: 2 },
-            { name: "Bathrooms", value: 2 },
-            { name: "Area", value: "1500 sq ft" },
-            { name: "Parking", value: 1 },
-            { name: "Furnished", value: "Semi" }
-        ],
-        amenities: ["central-ac", "elevator", "backup-power", "security", "parking"],
-        images: [
-            "https://media.zameen.com/thumbnails/297496378-800x600.webp",
-            "https://media.zameen.com/thumbnails/297610782-800x600.webp",
-            "https://media.zameen.com/thumbnails/281239814-800x600.webp"
-        ],
-        thumbnail: "https://media.zameen.com/thumbnails/297496378-800x600.webp",
-        featured: false,
-        createdAt: "2026-05-18T10:00:00Z"
-    },
-    {
-        id: "PROP-1003",
-        title: "Family Home with Garden in Islamabad",
-        description: "Beautiful 4-bedroom family home with large garden, servant quarters, and modern amenities in prime location.",
-        category: "family-homes",
-        purpose: "for-sale",
-        badge: "price-drop",
-        price: {
-            amount: 95000000,
+            amount: 48000000, // 4.8 Crore PKR
             currency: "PKR",
             period: null
         },
         location: {
             city: "Islamabad",
-            area: "F-7",
-            address: "Street 20, Sector F-7/4",
-            coordinates: { lat: 33.7215, lng: 73.0607 }
+            area: "DHA Phase 5",
+            address: "Sector B, Sector Main Boulevard, DHA Phase 5, Islamabad",
+            coordinates: {
+                lat: 33.5189,
+                lng: 73.1714
+            }
         },
         contact: {
-            email: "homes@islamabadrealty.com",
-            whatsapp: "+923001234569",
-            phone: "+923001234569"
+            whatsapp: "+923339876543",
+            phone: "+92519876543" // Left out email to show it's optional
         },
         details: [
             { name: "Bedrooms", value: 4 },
-            { name: "Bathrooms", value: 4 },
-            { name: "Area", value: "1.5 Kanal" },
-            { name: "Parking", value: 2 },
-            { name: "Furnished", value: "No" }
+            { name: "Bathrooms", value: 5 },
+            { name: "Area Size", value: "10 Marla" },
+            { name: "Kitchens", value: 2 },
+            { name: "Facing", value: "Park Facing" },
+            { name: "Parking Spaces", value: 2 }
         ],
-        amenities: ["garden", "play-area", "servant-room", "store-room", "lawn"],
+        amenities: [
+            "24/7 Security Patrol",
+            "Gated Community",
+            "Water Borehole",
+            "Main Boulevard Access",
+            "UPS/Inverter Wiring Complete",
+            "Powder Room"
+        ],
         images: [
-            "https://media.zameen.com/thumbnails/310541462-800x600.webp",
-            "https://media.zameen.com/thumbnails/310184665-800x600.webp",
-            "https://media.zameen.com/thumbnails/308729418-800x600.webp"
+            "/listings/h2i2.webp",
+            "/listings/h2i3.webp",
+            "/listings/h2i4.webp"
         ],
-        thumbnail: "https://media.zameen.com/thumbnails/310541462-800x600.webp",
-        featured: true,
-        createdAt: "2026-05-10T10:00:00Z"
-    },
-    {
-        id: "PROP-1004",
-        title: "Studio Apartment in Clifton",
-        description: "Fully furnished studio with ocean view, gym access, and rooftop lounge. Perfect for professionals.",
-        category: "apartments",
-        purpose: "for-rent",
-        badge: "hot",
-        price: {
-            amount: 80000,
-            currency: "PKR",
-            period: "monthly"
-        },
-        location: {
-            city: "Karachi",
-            area: "Clifton",
-            address: "Block 2, Near Beach Luxury",
-            coordinates: { lat: 24.8104, lng: 67.0316 }
-        },
-        contact: {
-            email: "studio@cityrentals.com",
-            whatsapp: "+923001234570",
-            phone: "+923001234570"
-        },
-        details: [
-            { name: "Bedrooms", value: 1 },
-            { name: "Bathrooms", value: 1 },
-            { name: "Area", value: "650 sq ft" },
-            { name: "Parking", value: 0 },
-            { name: "Furnished", value: "Fully" }
-        ],
-        amenities: ["gym", "rooftop", "high-speed-wifi", "security", "maintenance"],
-        images: [
-            "https://media.zameen.com/thumbnails/308445329-800x600.webp",
-            "https://media.zameen.com/thumbnails/306658007-800x600.webp",
-            "https://media.zameen.com/thumbnails/306356672-800x600.webp"
-        ],
-        thumbnail: "https://media.zameen.com/thumbnails/308445329-800x600.webp",
+        thumbnail: "/listings/h2i1.webp",
         featured: false,
-        createdAt: "2026-05-20T10:00:00Z"
+        createdAt: "2026-06-01T14:30:00Z"
     },
     {
-        id: "PROP-1005",
-        title: "Commercial Office Space - DHA Lahore",
-        description: "2000 sq ft prime commercial office space on main boulevard. Ideal for corporate offices or bank.",
-        category: "commercial",
-        purpose: "for-rent",
-        badge: undefined,
-        price: {
-            amount: 350000,
-            currency: "PKR",
-            period: "monthly"
-        },
-        location: {
-            city: "Lahore",
-            area: "DHA Phase 6",
-            address: "Commercial Area, Sector Y",
-            coordinates: { lat: 31.4697, lng: 74.2728 }
-        },
-        contact: {
-            email: "commercial@primeproperties.com",
-            whatsapp: "+923001234571",
-            phone: "+923001234571"
-        },
-        details: [
-            { name: "Area", value: "2000 sq ft" },
-            { name: "Parking", value: 10 },
-            { name: "Washrooms", value: 3 },
-            { name: "Floors", value: "Ground" }
-        ],
-        amenities: ["generator", "security", "cctv", "reception-area", "conference-room"],
-        images: [
-            "https://media.zameen.com/thumbnails/305749128-800x600.webp",
-            "https://media.zameen.com/thumbnails/304999964-800x600.webp",
-            "https://media.zameen.com/thumbnails/304559852-800x600.webp"
-        ],
-        thumbnail: "https://media.zameen.com/thumbnails/305749128-800x600.webp",
-        featured: true,
-        createdAt: "2026-05-12T10:00:00Z"
-    },
-    {
-        id: "PROP-1006",
-        title: "Penthouse with Rooftop Garden - Islamabad",
-        description: "Exclusive 3-bedroom penthouse featuring private rooftop garden, Jacuzzi, and panoramic city views.",
-        category: "luxury-apartments",
+        id: "prop_dha_2026_003",
+        title: "Luxury 3-Bedroom Penthouse with Panoramic Views",
+        description: "Experience high-rise luxury living in DHA Phase 2, Islamabad. This exclusive 3-bedroom penthouse features floor-to-ceiling windows, an expansive open-plan layout, a private plunge pool on the balcony, and dedicated basement parking. Located in a secure building right next to the major commercial plazas and fine dining outlets.",
+        category: "Apartment",
         purpose: "for-sale",
-        badge: "new",
+        badge: "price-drop",
         price: {
-            amount: 125000000,
+            amount: 65000000, // 6.5 Crore PKR
             currency: "PKR",
             period: null
         },
         location: {
             city: "Islamabad",
-            area: "E-7",
-            address: "Margalla Road",
-            coordinates: { lat: 33.7268, lng: 73.0765 }
+            area: "DHA Phase 2",
+            address: "Emaar Canyon Views / Goldcrest Highrise, DHA Phase 2, Islamabad",
+            coordinates: {
+                lat: 33.5224,
+                lng: 73.1591
+            }
         },
         contact: {
-            email: "penthouse@luxuryislamabad.com",
-            whatsapp: "+923001234572",
-            phone: "+923001234572"
+            email: "info@dhahomes.pk" // Only email provided to test optional contact permutations
         },
         details: [
             { name: "Bedrooms", value: 3 },
             { name: "Bathrooms", value: 4 },
-            { name: "Area", value: "3500 sq ft" },
-            { name: "Parking", value: 2 },
-            { name: "Furnished", value: "Fully" }
+            { name: "Floor Level", value: "14th Floor" },
+            { name: "Total Area", value: "3,200 Sq. Ft." },
+            { name: "Maintenance Fee", value: "25,000 PKR/Month" }
         ],
-        amenities: ["rooftop-garden", "jacuzzi", "sauna", "home-automation", "elevator"],
+        amenities: [
+            "24/7 Power Backup",
+            "Private Balcony Plunge Pool",
+            "High-Speed Passenger Elevators",
+            "Fitness Center & Gym Access",
+            "Covered Basement Parking",
+            "Fire Fighting System",
+            "Concierge Desk"
+        ],
         images: [
-            "https://media.zameen.com/thumbnails/303575906-800x600.webp",
-            "https://media.zameen.com/thumbnails/302699890-800x600.webp",
-            "https://media.zameen.com/thumbnails/302217577-800x600.webp"
+            "/listings/h3i2.webp",
+            "/listings/h3i3.webp",
         ],
-        thumbnail: "https://media.zameen.com/thumbnails/303575906-800x600.webp",
+        thumbnail: "/listings/h3i1.webp",
         featured: true,
-        createdAt: "2026-05-19T10:00:00Z"
+        createdAt: "2026-06-01T18:45:12Z"
     },
     {
-        id: "PROP-1007",
-        title: "3-Bedroom Family Apartment - Rawalpindi",
-        description: "Spacious apartment in quiet neighborhood close to schools, hospitals, and parks.",
-        category: "apartments",
-        purpose: "for-sale",
-        badge: "price-drop",
-        price: {
-            amount: 45000000,
-            currency: "PKR",
-            period: null
-        },
-        location: {
-            city: "Rawalpindi",
-            area: "Gulshan-e-Abbas",
-            address: "Main Double Road",
-            coordinates: { lat: 33.5651, lng: 73.0169 }
-        },
-        contact: {
-            email: "sales@rawalpindihomes.com",
-            whatsapp: "+923001234573",
-            phone: "+923001234573"
-        },
-        details: [
-            { name: "Bedrooms", value: 3 },
-            { name: "Bathrooms", value: 3 },
-            { name: "Area", value: "1800 sq ft" },
-            { name: "Parking", value: 1 },
-            { name: "Furnished", value: "No" }
-        ],
-        amenities: ["park", "mosque-nearby", "schools-nearby", "hospital-nearby"],
-        images: [
-            "https://media.zameen.com/thumbnails/301582064-800x600.webp",
-            "https://media.zameen.com/thumbnails/297592759-800x600.webp",
-            "https://media.zameen.com/thumbnails/294016160-800x600.webp"
-        ],
-        thumbnail: "https://media.zameen.com/thumbnails/301582064-800x600.webp",
-        featured: false,
-        createdAt: "2026-05-08T10:00:00Z"
-    },
-    {
-        id: "PROP-1008",
-        title: "Beach Front Villa - Karachi",
-        description: "Luxury 6-bedroom villa with private beach access, infinity pool, and staff quarters.",
-        category: "luxury-villas",
+        id: "prop_dha_2026_004",
+        title: "4 Kanal Exquisite Modern Luxury Farmhouse",
+        description: "An unparalleled 4 Kanal contemporary country farmhouse blending rustic charm with sleek modern architecture. Surrounded by lush greenery, this estate features expansive manicured lawns, an open-concept layout with massive glass facades, a private infinity pool, and an outdoor fireplace deck. Ideal for premium luxury living away from the city bustle.",
+        category: "Farm House",
         purpose: "for-sale",
         badge: "hot",
         price: {
-            amount: 350000000,
+            amount: 165000000, // 16.5 Crore PKR
             currency: "PKR",
             period: null
         },
         location: {
-            city: "Karachi",
-            area: "Defence Phase 8",
-            address: "Seaview Beach Road",
-            coordinates: { lat: 24.8154, lng: 67.0327 }
+            city: "Islamabad",
+            area: "DHA Phase 4",
+            address: "River View Block, Executive Farmhouse Enclave, DHA Phase 4, Islamabad",
+            coordinates: {
+                lat: 33.5041,
+                lng: 73.1185
+            }
         },
         contact: {
-            email: "beach@luxuryestates.com",
-            whatsapp: "+923001234574",
-            phone: "+923001234574"
+            email: "vip-listings@dharealty.com",
+            whatsapp: "+923005551234",
+            phone: "+92515551234"
+        },
+        details: [
+            { name: "Bedrooms", value: 4 },
+            { name: "Bathrooms", value: 5 },
+            { name: "Land Area", value: "4 Kanal" },
+            { name: "Covered Area", value: "7,500 Sq. Ft." },
+            { name: "Swimming Pool Size", value: "20x40 Ft" },
+            { name: "Lawn Area", value: "2.5 Kanal" }
+        ],
+        amenities: [
+            "Private Infinity Pool",
+            "Wrap-around Porch",
+            "Boundary Wall with Laser Security",
+            "Independent Guard Room",
+            "Dedicated Water Boring & Filtration Plant",
+            "Outdoor BBQ & Fire Pit Kitchen",
+            "Fruit Orchard Area"
+        ],
+        images: [
+            "/listings/h4i2.webp",
+            "/listings/h4i3.webp",
+        ],
+        thumbnail: "/listings/h4i1.webp",
+        featured: true,
+        createdAt: "2026-06-01T21:15:44Z"
+    }, {
+        id: "prop_dha_2026_005",
+        title: "1 Kanal Double Unit Investor House - Phase 1",
+        description: "An excellent investment opportunity in DHA Phase 1, Islamabad. This 1 Kanal solid-construction double-unit house features independent entrance stairs for the first floor, dual gas and electricity meters, and premium woodwork throughout. Located in a mature, fully developed sector within walking distance to schools, parks, and the main commercial avenue.",
+        category: "House",
+        purpose: "for-sale",
+        badge: "hot",
+        price: {
+            amount: 72000000, // 7.2 Crore PKR
+            currency: "PKR",
+            period: null
+        },
+        location: {
+            city: "Islamabad",
+            area: "DHA Phase 1",
+            address: "Sector F, Street 5, DHA Phase 1, Islamabad",
+            coordinates: {
+                lat: 33.5512,
+                lng: 73.1145
+            }
+        },
+        contact: {
+            whatsapp: "+923215556789" // Just WhatsApp to test minimal defined fields
         },
         details: [
             { name: "Bedrooms", value: 6 },
-            { name: "Bathrooms", value: 8 },
-            { name: "Area", value: "3 Kanal" },
-            { name: "Parking", value: 6 },
-            { name: "Furnished", value: "Fully" }
-        ],
-        amenities: ["private-beach", "infinity-pool", "home-cinema", "gym", "spa", "staff-quarters"],
-        images: [
-            "https://media.zameen.com/thumbnails/297279234-800x600.webp",
-            "https://media.zameen.com/thumbnails/297496378-800x600.webp",
-            "https://media.zameen.com/thumbnails/297610782-800x600.webp"
-        ],
-        thumbnail: "https://media.zameen.com/thumbnails/297279234-800x600.webp",
-        featured: true,
-        createdAt: "2026-05-17T10:00:00Z"
-    },
-    {
-        id: "PROP-1009",
-        title: "Economical 1-Bedroom Flat - Johar Town",
-        description: "Affordable flat ideal for bachelors or small families. Well-maintained building with security.",
-        category: "apartments",
-        purpose: "for-rent",
-        badge: undefined,
-        price: {
-            amount: 45000,
-            currency: "PKR",
-            period: "monthly"
-        },
-        location: {
-            city: "Lahore",
-            area: "Johar Town",
-            address: "Block B, Near Emporium Mall",
-            coordinates: { lat: 31.4504, lng: 74.3078 }
-        },
-        contact: {
-            email: "rentals@cityliving.com",
-            whatsapp: "+923001234575",
-            phone: "+923001234575"
-        },
-        details: [
-            { name: "Bedrooms", value: 1 },
-            { name: "Bathrooms", value: 1 },
-            { name: "Area", value: "750 sq ft" },
-            { name: "Parking", value: 0 },
-            { name: "Furnished", value: "No" }
-        ],
-        amenities: ["security", "water-supply", "waste-disposal"],
-        images: [
-            "https://media.zameen.com/thumbnails/281239814-800x600.webp",
-            "https://media.zameen.com/thumbnails/310541462-800x600.webp",
-            "https://media.zameen.com/thumbnails/310184665-800x600.webp"
-        ],
-        thumbnail: "https://media.zameen.com/thumbnails/281239814-800x600.webp",
-        featured: false,
-        createdAt: "2026-05-21T10:00:00Z"
-    },
-    {
-        id: "PROP-1010",
-        title: "Farm House with Orchard - Multan",
-        description: "Beautiful farm house on 4 acres with fruit orchard, swimming pool, and separate guest house.",
-        category: "farm-houses",
-        purpose: "for-sale",
-        badge: "new",
-        price: {
-            amount: 220000000,
-            currency: "PKR",
-            period: null
-        },
-        location: {
-            city: "Multan",
-            area: "Multan Road",
-            address: "Near Bahauddin Zakariya University",
-            coordinates: { lat: 30.1989, lng: 71.4666 }
-        },
-        contact: {
-            email: "farms@countryestates.com",
-            whatsapp: "+923001234576",
-            phone: "+923001234576"
-        },
-        details: [
-            { name: "Bedrooms", value: 5 },
-            { name: "Bathrooms", value: 5 },
-            { name: "Area", value: "4 Acres" },
-            { name: "Parking", value: 10 },
-            { name: "Furnished", value: "Semi" }
-        ],
-        amenities: ["orchard", "swimming-pool", "guest-house", "lawn", "tube-well"],
-        images: [
-            "https://media.zameen.com/thumbnails/308729418-800x600.webp",
-            "https://media.zameen.com/thumbnails/308445329-800x600.webp",
-            "https://media.zameen.com/thumbnails/306658007-800x600.webp"
-        ],
-        thumbnail: "https://media.zameen.com/thumbnails/308729418-800x600.webp",
-        featured: false,
-        createdAt: "2026-05-14T10:00:00Z"
-    },
-    {
-        id: "PROP-1011",
-        title: "Corporate Office Building - Karachi",
-        description: "8-story commercial building with bank, offices, and restaurant space. Prime downtown location.",
-        category: "commercial",
-        purpose: "for-sale",
-        badge: undefined,
-        price: {
-            amount: 850000000,
-            currency: "PKR",
-            period: null
-        },
-        location: {
-            city: "Karachi",
-            area: "Shahrah-e-Faisal",
-            address: "Near Airport",
-            coordinates: { lat: 24.8802, lng: 67.1195 }
-        },
-        contact: {
-            email: "commercial@primeproperties.com",
-            whatsapp: "+923001234577",
-            phone: "+923001234577"
-        },
-        details: [
-            { name: "Floors", value: 8 },
-            { name: "Area", value: "40000 sq ft" },
-            { name: "Parking", value: 50 },
-            { name: "Elevators", value: 3 }
-        ],
-        amenities: ["bank-strongroom", "generator", "cctv", "fire-safety", "central-ac"],
-        images: [
-            "https://media.zameen.com/thumbnails/306356672-800x600.webp",
-            "https://media.zameen.com/thumbnails/305749128-800x600.webp",
-            "https://media.zameen.com/thumbnails/304999964-800x600.webp"
-        ],
-        thumbnail: "https://media.zameen.com/thumbnails/306356672-800x600.webp",
-        featured: true,
-        createdAt: "2026-05-09T10:00:00Z"
-    },
-    {
-        id: "PROP-1012",
-        title: "Modern Guest House - Murree",
-        description: "Fully furnished guest house with 6 rooms, common lounge, and kitchen. Perfect for Airbnb business.",
-        category: "commercial",
-        purpose: "for-sale",
-        badge: "hot",
-        price: {
-            amount: 65000000,
-            currency: "PKR",
-            period: null
-        },
-        location: {
-            city: "Murree",
-            area: "Mall Road",
-            address: "Near GPO Chowk",
-            coordinates: { lat: 33.9062, lng: 73.3903 }
-        },
-        contact: {
-            email: "guesthouse@hillstations.com",
-            whatsapp: "+923001234578",
-            phone: "+923001234578"
-        },
-        details: [
-            { name: "Rooms", value: 6 },
             { name: "Bathrooms", value: 7 },
-            { name: "Area", value: "2 Kanal" },
-            { name: "Parking", value: 4 },
-            { name: "Furnished", value: "Fully" }
+            { name: "Area Size", value: "1 Kanal" },
+            { name: "Kitchens", value: 2 },
+            { name: "Unit Type", value: "Independent Double Unit" },
+            { name: "Servant Quarters", value: 2 }
         ],
-        amenities: ["heating", "common-lounge", "kitchen", "terrace", "security"],
+        amenities: [
+            "Dual Electricity Meters",
+            "Separate Underground Water Tanks",
+            "Independent Access Staircase",
+            "Solid Ash Wood Cabinets",
+            "Marbled Driveway",
+            "Walking Distance to Commercial"
+        ],
         images: [
-            "https://media.zameen.com/thumbnails/304559852-800x600.webp",
-            "https://media.zameen.com/thumbnails/303575906-800x600.webp",
-            "https://media.zameen.com/thumbnails/302699890-800x600.webp"
+            "/listings/h5i2.webp",
+            "/listings/h5i3.webp",
         ],
-        thumbnail: "https://media.zameen.com/thumbnails/304559852-800x600.webp",
+        thumbnail: "/listings/h5i1.webp",
         featured: false,
-        createdAt: "2026-05-16T10:00:00Z"
-    },
-    {
-        id: "PROP-1013",
-        title: "Retail Shop - DHA Lahore",
-        description: "Corner shop on main road with high foot traffic. Perfect for clothing brand or mobile store.",
-        category: "commercial",
-        purpose: "for-rent",
+        createdAt: "2026-06-01T23:40:10Z"
+    }, {
+        id: "prop_dha_2026_006",
+        title: "Premium 2-Bedroom Family Apartment at Goldcrest Views",
+        description: "A beautifully finished, vacant 2-bedroom luxury apartment available in the iconic Goldcrest Views towers, DHA Phase 2, Islamabad. Positioned on a middle floor, this corner unit provides abundant natural light and an unblocked view of the central courtyard. Located immediately adjacent to Giga Mall with direct urban highway connectivity.",
+        category: "Apartment",
+        purpose: "for-sale",
         badge: "new",
         price: {
-            amount: 120000,
-            currency: "PKR",
-            period: "monthly"
-        },
-        location: {
-            city: "Lahore",
-            area: "DHA Phase 5",
-            address: "Commercial Zone, Sector C",
-            coordinates: { lat: 31.4547, lng: 74.2987 }
-        },
-        contact: {
-            email: "retail@shopproperties.com",
-            whatsapp: "+923001234579",
-            phone: "+923001234579"
-        },
-        details: [
-            { name: "Area", value: "500 sq ft" },
-            { name: "Width", value: "20 ft" },
-            { name: "Electricity", value: "3-phase" }
-        ],
-        amenities: ["main-road", "high-footfall", "parking-nearby"],
-        images: [
-            "https://media.zameen.com/thumbnails/302217577-800x600.webp",
-            "https://media.zameen.com/thumbnails/301582064-800x600.webp",
-            "https://media.zameen.com/thumbnails/297592759-800x600.webp"
-        ],
-        thumbnail: "https://media.zameen.com/thumbnails/302217577-800x600.webp",
-        featured: false,
-        createdAt: "2026-05-19T10:00:00Z"
-    },
-    {
-        id: "PROP-1014",
-        title: "Luxury 4-Bedroom House with Pool - Islamabad",
-        description: "Contemporary home with swimming pool, home theater, and modern architecture in prime location.",
-        category: "luxury-villas",
-        purpose: "for-sale",
-        badge: "hot",
-        price: {
-            amount: 165000000,
+            amount: 22000000, // 2.2 Crore PKR
             currency: "PKR",
             period: null
         },
         location: {
             city: "Islamabad",
-            area: "F-6",
-            address: "Super Market Road",
-            coordinates: { lat: 33.7225, lng: 73.0731 }
+            area: "DHA Phase 2",
+            address: "Tower 3, Goldcrest Views, Sector A, DHA Phase 2, Islamabad",
+            coordinates: {
+                lat: 33.5251,
+                lng: 73.1610
+            }
         },
         contact: {
-            email: "luxury@islamabadrealty.com",
-            whatsapp: "+923001234580",
-            phone: "+923001234580"
-        },
-        details: [
-            { name: "Bedrooms", value: 4 },
-            { name: "Bathrooms", value: 5 },
-            { name: "Area", value: "2 Kanal" },
-            { name: "Parking", value: 3 },
-            { name: "Furnished", value: "Fully" }
-        ],
-        amenities: ["swimming-pool", "home-theater", "gym", "smart-home", "garden"],
-        images: [
-            "https://media.zameen.com/thumbnails/294016160-800x600.webp",
-            "https://media.zameen.com/thumbnails/297279234-800x600.webp",
-            "https://media.zameen.com/thumbnails/297496378-800x600.webp"
-        ],
-        thumbnail: "https://media.zameen.com/thumbnails/294016160-800x600.webp",
-        featured: true,
-        createdAt: "2026-05-18T10:00:00Z"
-    },
-    {
-        id: "PROP-1015",
-        title: "2-Bedroom Apartment Near Airport - Karachi",
-        description: "Conveniently located apartment close to airport, ideal for frequent travelers or airline staff.",
-        category: "apartments",
-        purpose: "for-rent",
-        badge: undefined,
-        price: {
-            amount: 90000,
-            currency: "PKR",
-            period: "monthly"
-        },
-        location: {
-            city: "Karachi",
-            area: "Gulshan-e-Maymar",
-            address: "Near Jinnah Terminal",
-            coordinates: { lat: 24.8936, lng: 67.1556 }
-        },
-        contact: {
-            email: "airport@cityrentals.com",
-            whatsapp: "+923001234581",
-            phone: "+923001234581"
+            email: "listings@giganetwork.pk",
+            whatsapp: "+923211112233"
         },
         details: [
             { name: "Bedrooms", value: 2 },
             { name: "Bathrooms", value: 2 },
-            { name: "Area", value: "1200 sq ft" },
-            { name: "Parking", value: 1 },
-            { name: "Furnished", value: "No" }
+            { name: "Floor Level", value: "8th Floor" },
+            { name: "Apartment Size", value: "1,230 Sq. Ft." },
+            { name: "Balconies", value: 1 }
         ],
-        amenities: ["security", "elevator", "water", "power-backup"],
+        amenities: [
+            "24/7 Concierge Service",
+            "Dedicated Covered Parking Slot",
+            "Rooftop Gym Access",
+            "Intercom System",
+            "Dual Passenger Elevators",
+            "High-Speed Internet Infrastructure",
+            "Trash Chute System"
+        ],
         images: [
-            "https://media.zameen.com/thumbnails/297610782-800x600.webp",
-            "https://media.zameen.com/thumbnails/281239814-800x600.webp",
-            "https://media.zameen.com/thumbnails/310541462-800x600.webp"
+            "/listings/a1i2.webp",
+            "/listings/a1i3.webp",
         ],
-        thumbnail: "https://media.zameen.com/thumbnails/297610782-800x600.webp",
+        thumbnail: "/listings/a1i1.webp",
         featured: false,
-        createdAt: "2026-05-20T10:00:00Z"
+        createdAt: "2026-06-01T23:55:00Z"
     },
     {
-        id: "PROP-1016",
-        title: "Traditional Haveli - Lahore",
-        description: "Historic property renovated with modern amenities while preserving original architecture.",
-        category: "heritage",
+        id: "prop_dha_2026_007",
+        title: "Chic 1-Bedroom Executive Flat in DHA Phase 3",
+        description: "A masterfully designed 1-bedroom executive flat offering a seamless open-plan kitchen and living space. Features integrated hidden appliances, customized oak wood cabinets, micro-cement flooring, and smart climate zoning. Situated in a newly completed boutique building perfect for young professionals or corporate rentals.",
+        category: "Apartment",
         purpose: "for-sale",
         badge: "new",
         price: {
-            amount: 75000000,
+            amount: 14500000, // 1.45 Crore PKR
             currency: "PKR",
             period: null
         },
         location: {
-            city: "Lahore",
-            area: "Androon Shehr",
-            address: "Near Badshahi Mosque",
-            coordinates: { lat: 31.5882, lng: 74.3112 }
+            city: "Islamabad",
+            area: "DHA Phase 3",
+            address: "Serene Heights Block, Sector C, DHA Phase 3, Islamabad",
+            coordinates: {
+                lat: 33.5115,
+                lng: 73.1302
+            }
         },
         contact: {
-            email: "heritage@lahorerealty.com",
-            whatsapp: "+923001234582",
-            phone: "+923001234582"
+            whatsapp: "+923450009988",
+            phone: "+92510009988"
         },
         details: [
-            { name: "Bedrooms", value: 5 },
-            { name: "Bathrooms", value: 5 },
-            { name: "Area", value: "1 Kanal" },
-            { name: "Parking", value: 0 },
-            { name: "Furnished", value: "Semi" }
+            { name: "Bedrooms", value: 1 },
+            { name: "Bathrooms", value: 1 },
+            { name: "Flat Layout", value: "Studio Style Studio-Flat" },
+            { name: "Total Area Size", value: "680 Sq. Ft." },
+            { name: "Furnished Status", value: "Semi-Furnished" }
         ],
-        amenities: ["courtyard", "woodwork", "traditional-architecture", "modern-kitchen"],
+        amenities: [
+            "Integrated Kitchen Appliances",
+            "Smart Lock Keyless Entry",
+            "Dedicated Storage Locker",
+            "Secure Resident Access Controls",
+            "Backup Generator Line",
+            "Double Glazed Noise-Insulating Windows"
+        ],
         images: [
-            "https://media.zameen.com/thumbnails/310184665-800x600.webp",
-            "https://media.zameen.com/thumbnails/308729418-800x600.webp",
-            "https://media.zameen.com/thumbnails/308445329-800x600.webp"
+            "/listings/a2i2.webp",
+            "/listings/a2i3.webp",
         ],
-        thumbnail: "https://media.zameen.com/thumbnails/310184665-800x600.webp",
+        thumbnail: "/listings/a2i1.webp",
         featured: false,
-        createdAt: "2026-05-13T10:00:00Z"
-    },
-    {
-        id: "PROP-1017",
-        title: "3-Bedroom Corner House - Bahria Town",
-        description: "Corner plot house with extra ventilation and natural light. Large lawn and separate drawing/dining.",
-        category: "family-homes",
+        createdAt: "2026-06-01T10:00:18Z"
+    }, {
+        id: "prop_dha_2026_008",
+        title: "Spacious 3-Bedroom Corner Flat with Double Balcony",
+        description: "An expansive 3-bedroom corner flat located in one of DHA Phase 2's premier mid-rise complexes. This unit stands out with its dual wide balconies offering views of the central park, a completely separate dining lounge, and attached maid's quarters. Fully equipped with Turkish kitchen fittings and central gas lines already active.",
+        category: "Apartment",
         purpose: "for-sale",
         badge: "price-drop",
         price: {
-            amount: 85000000,
+            amount: 34000000, // 3.4 Crore PKR
             currency: "PKR",
             period: null
         },
         location: {
-            city: "Rawalpindi",
-            area: "Bahria Town Phase 8",
-            address: "Corner Plot, Sector B",
-            coordinates: { lat: 33.5651, lng: 73.0169 }
+            city: "Islamabad",
+            area: "DHA Phase 2",
+            address: "Parkside Residences, Sector E, DHA Phase 2, Islamabad",
+            coordinates: {
+                lat: 33.5285,
+                lng: 73.1552
+            }
         },
         contact: {
-            email: "homes@bahriaproperties.com",
-            whatsapp: "+923001234583",
-            phone: "+923001234583"
+            email: "contact@parkside-dha.pk",
+            whatsapp: "+923124445566",
+            phone: "+92514445566"
         },
         details: [
             { name: "Bedrooms", value: 3 },
-            { name: "Bathrooms", value: 3 },
-            { name: "Area", value: "1 Kanal" },
-            { name: "Parking", value: 2 },
-            { name: "Furnished", value: "No" }
+            { name: "Bathrooms", value: 4 },
+            { name: "Flat Size", value: "1,950 Sq. Ft." },
+            { name: "Floor Level", value: "4th Floor" },
+            { name: "Balconies", value: 2 },
+            { name: "Maid Quarters", value: 1 }
         ],
-        amenities: ["corner-plot", "lawn", "separate-dining", "store-room"],
+        amenities: [
+            "Dedicated Basement Parking",
+            "Dedicated Cargo & Passenger Elevators",
+            "Active Gas & Water Connections",
+            "24/7 Monitored CCTV Security",
+            "Community Park View",
+            "In-house Maintenance Team"
+        ],
         images: [
-            "https://media.zameen.com/thumbnails/306658007-800x600.webp",
-            "https://media.zameen.com/thumbnails/306356672-800x600.webp",
-            "https://media.zameen.com/thumbnails/305749128-800x600.webp"
+            "/listings/a3i2.webp",
+            "/listings/a3i3.webp",
+            "/listings/a3i4.webp",
         ],
-        thumbnail: "https://media.zameen.com/thumbnails/306658007-800x600.webp",
-        featured: false,
-        createdAt: "2026-05-11T10:00:00Z"
+        thumbnail: "/listings/a3i1.webp",
+        featured: true,
+        createdAt: "2026-06-01T15:20:45Z"
     },
     {
-        id: "PROP-1018",
-        title: "Executive Apartment - Blue Area Islamabad",
-        description: "High-end apartment with all furnishings included. Perfect for expatriates or executives.",
-        category: "apartments",
-        purpose: "for-rent",
-        badge: "hot",
+        id: "prop_dha_2026_013",
+        title: "Spacious 3-Bedroom Corner Flat with Double Balcony",
+        description: "An expansive 3-bedroom corner flat located in one of DHA Phase 2's premier mid-rise complexes. This unit stands out with its dual wide balconies offering views of the central park, a completely separate dining lounge, and attached maid's quarters. Fully equipped with Turkish kitchen fittings and central gas lines already active.",
+        category: "Apartment",
+        purpose: "for-sale",
+        badge: "price-drop",
         price: {
-            amount: 180000,
+            amount: 34000000, // 3.4 Crore PKR
             currency: "PKR",
-            period: "monthly"
+            period: null
         },
         location: {
             city: "Islamabad",
-            area: "Blue Area",
-            address: "Jinnah Avenue",
-            coordinates: { lat: 33.7182, lng: 73.0733 }
+            area: "DHA Phase 2",
+            address: "Parkside Residences, Sector E, DHA Phase 2, Islamabad",
+            coordinates: {
+                lat: 33.5285,
+                lng: 73.1552
+            }
         },
         contact: {
-            email: "executive@cityliving.com",
-            whatsapp: "+923001234584",
-            phone: "+923001234584"
+            email: "contact@parkside-dha.pk",
+            whatsapp: "+923124445566",
+            phone: "+92514445566"
         },
         details: [
-            { name: "Bedrooms", value: 2 },
-            { name: "Bathrooms", value: 2 },
-            { name: "Area", value: "1800 sq ft" },
-            { name: "Parking", value: 1 },
-            { name: "Furnished", value: "Fully" }
+            { name: "Bedrooms", value: 3 },
+            { name: "Bathrooms", value: 4 },
+            { name: "Flat Size", value: "1,950 Sq. Ft." },
+            { name: "Floor Level", value: "4th Floor" },
+            { name: "Balconies", value: 2 },
+            { name: "Maid Quarters", value: 1 }
         ],
-        amenities: ["wifi", "cable", "gym", "pool", "24/7-security"],
+        amenities: [
+            "Dedicated Basement Parking",
+            "Dedicated Cargo & Passenger Elevators",
+            "Active Gas & Water Connections",
+            "24/7 Monitored CCTV Security",
+            "Community Park View",
+            "In-house Maintenance Team"
+        ],
         images: [
-            "https://media.zameen.com/thumbnails/304999964-800x600.webp",
-            "https://media.zameen.com/thumbnails/304559852-800x600.webp",
-            "https://media.zameen.com/thumbnails/303575906-800x600.webp"
+            "/listings/a4i2.webp",
+            "/listings/a4i3.webp",
+            "/listings/a4i4.webp",
         ],
-        thumbnail: "https://media.zameen.com/thumbnails/304999964-800x600.webp",
+        thumbnail: "/listings/a4i1.webp",
         featured: true,
-        createdAt: "2026-05-17T10:00:00Z"
-    },
-    {
-        id: "PROP-1019",
-        title: "Warehouse with Loading Dock - Lahore",
-        description: "Large warehouse suitable for storage or distribution center. Easy access to motorway.",
-        category: "commercial",
-        purpose: "for-rent",
-        badge: undefined,
-        price: {
-            amount: 250000,
-            currency: "PKR",
-            period: "monthly"
-        },
-        location: {
-            city: "Lahore",
-            area: "Sundar Industrial Estate",
-            address: "Main Raiwind Road",
-            coordinates: { lat: 31.4374, lng: 74.2257 }
-        },
-        contact: {
-            email: "industrial@commercialproperties.com",
-            whatsapp: "+923001234585",
-            phone: "+923001234585"
-        },
-        details: [
-            { name: "Area", value: "10000 sq ft" },
-            { name: "Height", value: "30 ft" },
-            { name: "Loading Docks", value: 2 }
-        ],
-        amenities: ["loading-dock", "24/7-security", "heavy-electricity", "office-space"],
-        images: [
-            "https://media.zameen.com/thumbnails/302699890-800x600.webp",
-            "https://media.zameen.com/thumbnails/302217577-800x600.webp",
-            "https://media.zameen.com/thumbnails/301582064-800x600.webp"
-        ],
-        thumbnail: "https://media.zameen.com/thumbnails/302699890-800x600.webp",
-        featured: false,
-        createdAt: "2026-05-15T10:00:00Z"
-    },
-    {
-        id: "PROP-1020",
-        title: "Cozy Studio Near University - Islamabad",
-        description: "Perfect for students. Walking distance to university campus. All utilities included.",
-        category: "apartments",
-        purpose: "for-rent",
+        createdAt: "2026-06-01T15:20:45Z"
+    }, {
+        id: "prop_dha_2026_011",
+        title: "8 Marla Corporate Plaza Plot - DHA Phase 5 Main Boulevard",
+        description: "A highly lucrative 8 Marla premium commercial plot located on the primary commercial loop of DHA Phase 5, Islamabad. This site offers an expansive 40-foot front facing the main boulevard, with pre-cleared permissions for an extensive multi-level retail and corporate office development. Fully developed with immediate utility connections available.",
+        category: "Commercial Plot",
+        purpose: "for-sale",
         badge: "new",
         price: {
-            amount: 35000,
+            amount: 120000000, // 12 Crore PKR
             currency: "PKR",
-            period: "monthly"
+            period: null
         },
         location: {
             city: "Islamabad",
-            area: "H-11",
-            address: "Near NUST University",
-            coordinates: { lat: 33.6452, lng: 73.0181 }
+            area: "DHA Phase 5",
+            address: "Commercial Broadway, Main Sector Boulevard, DHA Phase 5, Islamabad",
+            coordinates: {
+                lat: 33.5165,
+                lng: 73.1742
+            }
         },
         contact: {
-            email: "student@campusrentals.com",
-            whatsapp: "+923001234586",
-            phone: "+923001234586"
+            whatsapp: "+923335554433",
+            phone: "+92515554433"
         },
         details: [
-            { name: "Bedrooms", value: 1 },
-            { name: "Bathrooms", value: 1 },
-            { name: "Area", value: "500 sq ft" },
-            { name: "Parking", value: 0 },
-            { name: "Furnished", value: "Fully" }
+            { name: "Plot Size", value: "8 Marla" },
+            { name: "Dimensions", value: "40 x 45 Ft" },
+            { name: "Frontage Road Width", value: "120 Feet" },
+            { name: "Permitted Height", value: "Basement + LG + G + 5 Floors" },
+            { name: "Zoning Category", value: "Retail & Corporate Offices" },
+            { name: "Transfer Type", value: "Direct Allocation / Immediate Transfer" }
         ],
-        amenities: ["study-area", "wifi", "laundry", "common-kitchen"],
+        amenities: [
+            "120-Ft Main Boulevard Facing",
+            "Dual-Side Open (Front and Back Alley)",
+            "Underground High-Voltage Power Grid",
+            "High-Volume Fiber Optic Line Ready",
+            "Pre-Installed Commercial Drainage",
+            "Central Car Parking Arcade Access",
+            "Water Boring Allowed"
+        ],
         images: [
-            "https://media.zameen.com/thumbnails/297592759-800x600.webp",
-            "https://media.zameen.com/thumbnails/294016160-800x600.webp",
-            "https://media.zameen.com/thumbnails/297279234-800x600.webp"
+            "/listings/p1i1.webp", // Development/site context
         ],
-        thumbnail: "https://media.zameen.com/thumbnails/297592759-800x600.webp",
+        thumbnail: "/listings/p1i1.webp",
         featured: false,
-        createdAt: "2026-05-21T10:00:00Z"
+        createdAt: "2026-06-01T21:10:15Z"
+    },
+    {
+        id: "prop_dha_2026_012",
+        title: "1 Kanal Residential Plot for Sale - Phase 4 Overseas Block",
+        description: "An exceptional, fully leveled 1 Kanal residential plot located in the premium, highly elevated Overseas Block of DHA Phase 4, Islamabad. This plot offers panoramic views of the Soan River basin and is surrounded by rapid high-end villa construction. All development charges are fully paid, making it ready for immediate map approval and groundbreaking.",
+        category: "Plot",
+        purpose: "for-sale",
+        badge: "new",
+        price: {
+            amount: 1602500000, // 3.25 Crore PKR
+            currency: "PKR",
+            period: null
+        },
+        location: {
+            city: "Islamabad",
+            area: "DHA Phase 4",
+            address: "Block C, Sector 2, DHA Phase 4, Islamabad",
+            coordinates: {
+                lat: 33.4985,
+                lng: 73.1241
+            }
+        },
+        contact: {
+            email: "plots@dha-investments.pk",
+            whatsapp: "+923015557788"
+        },
+        details: [
+            { name: "Plot Size", value: "1 Kanal" },
+            { name: "Dimensions", value: "50 x 90 Ft" },
+            { name: "Street Width", value: "40 Feet" },
+            { name: "Plot Type", value: "Regular / Category Plot" },
+            { name: "Development Status", value: "100% Developed / Possession Ready" },
+            { name: "Dues Status", value: "All Development Charges Paid" }
+        ],
+        amenities: [
+            "Underground Utility Grid (Gas/Water/Electric)",
+            "River View / Elevated Topology",
+            "Walking Distance to Sector Mosque & Park",
+            "Gated Block with 24/7 Security Checkpoint",
+            "Pre-Cleared for Immediate Construction",
+            "Sewerage System Hookup Ready"
+        ],
+        images: [
+            "/listings/p2i1.webp", // Raw green land plot
+        ],
+        thumbnail: "/listings/p2i1.webp",
+        featured: false,
+        createdAt: "2026-06-01T22:45:00Z"
+    }, {
+        id: "prop_dha_2026_0110",
+        title: "Modern Retail Shop in Luxury Commercial Mall",
+        description: "An excellent investment opportunity or retail space setup in DHA Phase 2, Islamabad. This compact shop is situated on the first floor of a newly developed high-footfall commercial plaza. Perfectly suited for a boutique apparel studio, mobile franchise, or specialized electronics kiosk.",
+        category: "Shop",
+        purpose: "for-sale",
+        badge: "hot",
+        price: {
+            amount: 4500000, // 45 Lacs PKR
+            currency: "PKR",
+            period: null
+        },
+        location: {
+            city: "Islamabad",
+            area: "DHA Phase 2",
+            address: "First Floor, Central Business Arcade, Sector D, DHA Phase 2, Islamabad",
+            coordinates: {
+                lat: 33.5264,
+                lng: 73.1578
+            }
+        },
+        contact: {
+            email: "retail@dhabusiness.pk",
+            whatsapp: "+923125553344"
+        },
+        details: [
+            { name: "Property Type", value: "Commercial Shop" },
+            { name: "Total Area Size", value: "220 Sq. Ft." },
+            { name: "Floor Level", value: "1st Floor" },
+            { name: "Frontage Width", value: "12 Feet" },
+            { name: "Monthly Rental Value", value: "25,000 PKR" }
+        ],
+        amenities: [
+            "Central Air Conditioning Infrastructure",
+            "Glass Front Facade Installed",
+            "High-Visibility Corridor Placement",
+            "24/7 Mall Security & CCTV",
+            "Shared Commercial Restrooms",
+            "Escalator & Elevator Proximity",
+            "Backup Power Generator Connection"
+        ],
+        images: [
+            "/listings/s1i2.webp", // Shop interior/retail vibe
+            "/listings/s1i3.webp", // Shop interior/retail vibe
+        ],
+        thumbnail: "/listings/s1i1.webp",
+        featured: false,
+        createdAt: "2026-06-01T23:12:00Z"
+    }, {
+        id: "prop_dha_2026_014",
+        title: "Ground Floor Premium Food Court Kiosk",
+        description: "A high-visibility 180 Sq. Ft. commercial shop/kiosk tailored specifically for a fast-food franchise or dessert parlor. Located on the bustling lower ground level food enclave in DHA Phase 5. Benefits from an immediate shared seating layout and exceptional daily foot traffic.",
+        category: "Shop",
+        purpose: "for-sale",
+        badge: "new",
+        price: {
+            amount: 5000000, // 50 Lacs PKR
+            currency: "PKR",
+            period: null
+        },
+        location: {
+            city: "Islamabad",
+            area: "DHA Phase 5",
+            address: "Lower Ground Floor, Broadway Heights Mall, DHA Phase 5, Islamabad",
+            coordinates: {
+                lat: 33.5175,
+                lng: 73.1728
+            }
+        },
+        contact: {
+            whatsapp: "+923347778811",
+            phone: "+92517778811"
+        },
+        details: [
+            { name: "Property Type", value: "Food Court Shop / Kiosk" },
+            { name: "Total Area Size", value: "180 Sq. Ft." },
+            { name: "Floor Level", value: "Lower Ground" },
+            { name: "Utility Counter Meter", value: "Independent Commercial" },
+            { name: "Estimated ROI", value: "7.5% Annually" }
+        ],
+        amenities: [
+            "Dedicated Kitchen Gas Extraction Vent",
+            "Pre-Installed Water Supply & Drainage Point",
+            "Direct Access to Shared Food Court Seating",
+            "24/7 Power Backup (Dual Generator)",
+            "Fire Sprinkler & Smoke Detection System",
+            "Central Mall Audio & Wi-Fi Network"
+        ],
+        images: [
+            "/listings/s2i2.webp", // Shop interior/retail vibe
+        ],
+        thumbnail: "/listings/s2i1.webp",
+        featured: true,
+        createdAt: "2026-06-01T23:45:10Z"
+    }, {
+        id: "prop_dha_2026_015",
+        title: "Premium Corporate Office Space in Business Hub Plaza",
+        description: "An exceptional, fully corporate-ready office space occupying a prime corner position on the 5th floor of a prestigious commercial high-rise in DHA Phase 2. This space features massive double-glazed soundproof glass walls that overlook the main expressway, an executive suite layout, open-plan workstations, and an independent server room.",
+        category: "Office",
+        purpose: "for-sale",
+        badge: "hot",
+        price: {
+            amount: 44000000, // 4.4 Crore PKR
+            currency: "PKR",
+            period: null
+        },
+        location: {
+            city: "Islamabad",
+            area: "DHA Phase 2",
+            address: "5th Floor, Alpha Corporate Tower, Main World Trade Center Boulevard, DHA Phase 2, Islamabad",
+            coordinates: {
+                lat: 33.5228,
+                lng: 73.1544
+            }
+        },
+        contact: {
+            email: "corporate@alphatowers.pk",
+            whatsapp: "+923015559900",
+            phone: "+92515559900"
+        },
+        details: [
+            { name: "Property Type", value: "Commercial Office" },
+            { name: "Total Area Size", value: "2,400 Sq. Ft." },
+            { name: "Floor Level", value: "5th Floor" },
+            { name: "Executive Cabins", value: 3 },
+            { name: "Dedicated Parking Slots", value: 2 },
+            { name: "Conference Rooms", value: 1 }
+        ],
+        amenities: [
+            "High-Speed Fiber Optic Internet Infrastructure",
+            "Dedicated Server Room with Independent Cooling",
+            "24/7 Smart Card Access Control",
+            "Centralized VRF Air Conditioning Setup",
+            "Dedicated Executive Restrooms",
+            "Dual Passenger & Cargo Elevators",
+            "100% Uninterrupted Power Backup"
+        ],
+        images: [
+            "/listings/f1i2.webp", // Corporate office open space
+            "/listings/f1i3.webp", // Conference room / cabin view
+            "/listings/f1i4.webp"  // Modern glass commercial exterior
+        ],
+        thumbnail: "/listings/f1i1.webp",
+        featured: true,
+        createdAt: "2026-06-01T10:35:22Z"
+    }, {
+        id: "prop_dha_2026_016",
+        title: "9.5 Crore Luxury Corporate Headquarter Floor Wing",
+        description: "An elite, sprawling corporate office layout spanning a massive half-floor wing in a Grade-A commercial tower within DHA Phase 2, Islamabad. Designed for multinatonal firms, tech hubs, or large financial institutes, this premium space includes fully integrated data cabling, a grand reception lounge, an expansive boardroom, and glass-partitioned managerial suites with panoramic city views.",
+        category: "Office",
+        purpose: "for-sale",
+        badge: "new",
+        price: {
+            amount: 95000000, // 9.50 Crore PKR
+            currency: "PKR",
+            period: null
+        },
+        location: {
+            city: "Islamabad",
+            area: "DHA Phase 2",
+            address: "9th Floor, Apex Commercial Tower, Giga Downtown District, DHA Phase 2, Islamabad",
+            coordinates: {
+                lat: 33.5245,
+                lng: 73.1595
+            }
+        },
+        contact: {
+            email: "institutional-sales@apexrealestate.pk",
+            whatsapp: "+923215550099"
+        },
+        details: [
+            { name: "Property Type", value: "Corporate Floor Wing" },
+            { name: "Total Area Size", value: "4,850 Sq. Ft." },
+            { name: "Floor Level", value: "9th Floor (Corner)" },
+            { name: "Managerial Cabins", value: 8 },
+            { name: "Conference Boardrooms", value: 2 },
+            { name: "Reserved Basement Parking Slots", value: 5 }
+        ],
+        amenities: [
+            "Dedicated Executive Elevator Access",
+            "CAT-6 Network Structural Cabling Throughout",
+            "Biometric Fingerprint & Face-ID Entry Gate",
+            "Dual Zoned Central VRF Climate Control",
+            "Private In-Office Kitchenette & Coffee Bar",
+            "High-Capacity Server Room with Fire Suppressors",
+            "24/7 Corporate Concierge & Building Management"
+        ],
+        images: [
+            "/listings/f2i2.webp", // Corporate office open space
+            "/listings/f2i3.webp", // Modern corporate conference boardroom
+        ],
+        thumbnail: "/listings/f2i1.webp",
+        featured: true,
+        createdAt: "2026-06-01T10:39:00Z"
+    }, {
+        id: "prop_dha_2026_017",
+        title: "2 Kanal Compact Contemporary Farmhouse",
+        description: "An elegant and modern 2 Kanal boutique farmhouse setup located in the scenic, serene outskirts of DHA Phase 4 Extension / Phase 3. This property offers the perfect balance of rustic farmhouse living and modern lifestyle amenities. Features an open-concept kitchen, manicured boundary lawns, an organic kitchen garden patch, and an elevated patio deck ideal for evening barbecues.",
+        category: "Farm House",
+        purpose: "for-sale",
+        badge: "new",
+        price: {
+            amount: 65000000, // 6.5 Crore PKR
+            currency: "PKR",
+            period: null
+        },
+        location: {
+            city: "Islamabad",
+            area: "DHA Phase 4",
+            address: "Green Meadows Block, Phase 4 Extension, DHA, Islamabad",
+            coordinates: {
+                lat: 33.4912,
+                lng: 73.1094
+            }
+        },
+        contact: {
+            email: "greenliving@dharealty.com",
+            whatsapp: "+923334441122",
+            phone: "+92514441122"
+        },
+        details: [
+            { name: "Bedrooms", value: 3 },
+            { name: "Bathrooms", value: 4 },
+            { name: "Total Land Size", value: "2 Kanal" },
+            { name: "Covered Area Size", value: "4,200 Sq. Ft." },
+            { name: "Lawn Area Size", value: "1.2 Kanal" },
+            { name: "Stories", value: 1 }
+        ],
+        amenities: [
+            "Organic Kitchen Garden Patch",
+            "Elevated Outdoor Barbecue Deck",
+            "Dedicated Water Boring System",
+            "Secured Boundary Wall with Razor Wire",
+            "Detached Guard Room & Servant Quarter",
+            "Pre-Installed Solar Inverter Wiring",
+            "Perimeter Floodlight System"
+        ],
+        images: [],
+        thumbnail: "/listings/fh1i1.webp",
+        featured: false,
+        createdAt: "2026-06-01T10:44:33Z"
     }
-];;
+];

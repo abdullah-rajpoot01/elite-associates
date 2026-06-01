@@ -66,7 +66,7 @@ const ListingOverView = ({ listing, contact }: ListingOverViewProps) => {
                 <div className="grid gap-10 lg:grid-cols-3 lg:gap-20">
                     {/* Sticky Image Section */}
                     <div className="lg:col-span-1 lg:sticky lg:top-18 lg:self-start relative">
-                        <CarouselWithProgress />
+                        <CarouselWithProgress images={listing.images}/>
                         <ImagesGalleryDialog images={listing.images} />
                     </div>
 
