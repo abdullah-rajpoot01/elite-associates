@@ -23,11 +23,12 @@ const Page = async ({ params }: PageProps) => {
     return (
         <div className="min-h-screen flex flex-col gap-8 bg-background py-8 px-5 sm:px-8 ">
             <div>
-                <h2 className="text-pretty font-medium  tracking-[-0.04em] sm:mx-auto sm:max-w-xl  text-center md:text-[2.75rem] md:leading-[1.2] text-2xl  ">
-                    Strengthen your strategy
+                <h2 className="text-pretty font-medium  tracking-[-0.04em] sm:mx-auto sm:max-w-5xl  text-center md:text-[2.75rem] md:leading-[1.2] text-2xl  ">
+                    Find Properties for {type === "for-sale" ? "Sale" : "Rent"} in your desired location
+
                 </h2>
                 <p className="mt-3 text-pretty text-muted-foreground text-xl tracking-[-0.01em] text-center ">
-                    No complex configs. Just copy, paste, and start building
+                    Explore our wide range of property types and find your perfect match
                 </p>
             </div>
             {/* <Listing /> */}

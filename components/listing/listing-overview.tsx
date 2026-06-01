@@ -118,7 +118,7 @@ const ListingOverView = ({ listing, contact }: ListingOverViewProps) => {
                                 </h3>
                                 <span className="text-sm text-gray-500">{listing.details.length} items</span>
                             </div>
-                            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
+                            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 ">
                                 {listing.details.map((detail, index) => (
                                     <div
                                         key={index}
@@ -149,7 +149,7 @@ const ListingOverView = ({ listing, contact }: ListingOverViewProps) => {
                             <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-gray-100">
                                 Amenities
                             </h3>
-                            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 ">
                                 {listing.amenities.map((amenity, index) => (
                                     <div
                                         key={index}

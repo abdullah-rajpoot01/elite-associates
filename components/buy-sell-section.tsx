@@ -17,8 +17,8 @@ const plusPoints = [
     description: "Find where \"perfect\" meets \"happy\"",
   },
   {
-    ctaText: "Sell Now",
-    ctaUrl: "#",
+    ctaText: "Call Now",
+    ctaUrl: "tel:+923049645507",
     title: "Sell a property",
     image: "https://www.graana.com/home-page-images/sell.svg",
     description: "Get the best value in any economy",

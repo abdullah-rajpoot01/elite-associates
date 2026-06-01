@@ -15,10 +15,10 @@ const Listing = ({ listings }: ListingSectionProp) => {
     return (
         <div className="mx-auto max-w-(--breakpoint-xl) px-6 py-8 xl:px-0">
             <div className="flex flex-col items-center text-center pb-8">
-                <h2 className="mx-auto mt-5 w-full text-balance font-medium text-2xl tracking-[-0.04em] text-center">
+                <h2 className="mx-auto mt-5 w-full text-balance font-medium text-3xl sm:text-4xl tracking-[-0.04em] text-center">
                     Find Your Dream Property – Houses, Apartments & Plots
                 </h2>
-                <p className="mt-5 text-muted-foreground text-xl tracking-[-0.01em] ">
+                <p className="mt-5 text-muted-foreground text-lg sm:text-xl tracking-[-0.01em] ">
                     Browse Verified Properties for Sale & Rent
                 </p>
             </div>

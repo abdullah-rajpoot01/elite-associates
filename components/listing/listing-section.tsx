@@ -32,7 +32,7 @@ const Listing = ({ listings }: ListingSectionProp) => {
                 ))}
             </div>
 
-            <LoadMoreButton text="view all listing" url="/listing" />
+            <LoadMoreButton text="view all listing" url="/listings" />
 
         </div>
     );

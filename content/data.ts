@@ -73,8 +73,6 @@ export type PropertyListing = {
 type Category = {
     name: string;
 
-    description: string;
-
     image: string;
 
     slug: string;
@@ -82,45 +80,38 @@ type Category = {
 export const categories: Category[] = [
     {
         name: "Luxury Villas",
-        description: "Premium villas with modern amenities, swimming pools, and prime locations in gated communities",
         image: "/listings/Gemini_Generated_Image_x51bk6x51bk6x51b.webp",
-        slug: "luxury-villas"
+        slug: "villas"
     },
     {
         name: "Apartments",
-        description: "Modern apartments ranging from studios to penthouses in prime city locations",
-        image: "/listings/Gemini_Generated_Image_x51bk6x51bk6x51b.webp",
+        image: "/listings/a2i1.webp",
         slug: "apartments"
     },
     {
-        name: "Family Homes",
-        description: "Spacious houses perfect for families with gardens, servant quarters, and secure neighborhoods",
-        image: "https://media.zameen.com/thumbnails/310541462-800x600.webp",
-        slug: "family-homes"
+        name: "Homes",
+        image: "/listings/h2i1.webp",
+        slug: "homes"
     },
     {
         name: "Commercial",
-        description: "Office spaces, retail shops, warehouses, and commercial buildings for business",
-        image: "https://media.zameen.com/thumbnails/305749128-800x600.webp",
+        image: "/listings/p1i1.webp",
         slug: "commercial"
     },
     {
-        name: "Luxury Apartments",
-        description: "High-end apartments with premium finishes, rooftop gardens, and panoramic views",
-        image: "https://media.zameen.com/thumbnails/303575906-800x600.webp",
-        slug: "luxury-apartments"
+        name: "Shops",
+        image: "/listings/s1i1.webp",
+        slug: "shops"
+    },
+    {
+        name: "Offices",
+        image: "/listings/f2i1.webp",
+        slug: "Offices"
     },
     {
         name: "Farm Houses",
-        description: "Peaceful farm houses with orchards, swimming pools, and vast land for recreation",
-        image: "https://media.zameen.com/thumbnails/308729418-800x600.webp",
+        image: "/listings/fh1i1.webp",
         slug: "farm-houses"
-    },
-    {
-        name: "Heritage",
-        description: "Historic properties with traditional architecture, renovated with modern amenities",
-        image: "https://media.zameen.com/thumbnails/310184665-800x600.webp",
-        slug: "heritage"
     }
 ];
 export const listings: PropertyListing[] = [
@@ -128,7 +119,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_001",
         title: "1 Kanal Modern Luxury Ultra-Modern House for Sale",
         description: "A stunning, brand-new 1 Kanal ultra-modern architectural masterpiece located in DHA Phase 2, Islamabad. Features imported fittings, double-height lobby, smart home automation, high-end kitchen appliances, and a beautiful rooftop terrace with a scenic view of the Margalla foothills.",
-        category: "House",
+        category: "homes",
         purpose: "for-sale",
         badge: "hot",
         price: {
@@ -179,7 +170,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_002",
         title: "10 Marla Designer House for Sale - Phase 5",
         description: "An elegant, structurally sound 10 Marla contemporary house situated in a highly secure block of DHA Phase 5, Islamabad. This property boasts a minimalist interior design, imported Spanish tile flooring, solid ash wood doors, and a compact manicured lawn. Perfect for a medium-sized family looking for a premium location near the commercial hub.",
-        category: "House",
+        category: "homes",
         purpose: "for-sale",
         badge: "new",
         price: {
@@ -229,7 +220,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_003",
         title: "Luxury 3-Bedroom Penthouse with Panoramic Views",
         description: "Experience high-rise luxury living in DHA Phase 2, Islamabad. This exclusive 3-bedroom penthouse features floor-to-ceiling windows, an expansive open-plan layout, a private plunge pool on the balcony, and dedicated basement parking. Located in a secure building right next to the major commercial plazas and fine dining outlets.",
-        category: "Apartment",
+        category: "apartments",
         purpose: "for-sale",
         badge: "price-drop",
         price: {
@@ -277,7 +268,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_004",
         title: "4 Kanal Exquisite Modern Luxury Farmhouse",
         description: "An unparalleled 4 Kanal contemporary country farmhouse blending rustic charm with sleek modern architecture. Surrounded by lush greenery, this estate features expansive manicured lawns, an open-concept layout with massive glass facades, a private infinity pool, and an outdoor fireplace deck. Ideal for premium luxury living away from the city bustle.",
-        category: "Farm House",
+        category: "homes",
         purpose: "for-sale",
         badge: "hot",
         price: {
@@ -327,7 +318,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_005",
         title: "1 Kanal Double Unit Investor House - Phase 1",
         description: "An excellent investment opportunity in DHA Phase 1, Islamabad. This 1 Kanal solid-construction double-unit house features independent entrance stairs for the first floor, dual gas and electricity meters, and premium woodwork throughout. Located in a mature, fully developed sector within walking distance to schools, parks, and the main commercial avenue.",
-        category: "House",
+        category: "homes",
         purpose: "for-sale",
         badge: "hot",
         price: {
@@ -374,7 +365,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_006",
         title: "Premium 2-Bedroom Family Apartment at Goldcrest Views",
         description: "A beautifully finished, vacant 2-bedroom luxury apartment available in the iconic Goldcrest Views towers, DHA Phase 2, Islamabad. Positioned on a middle floor, this corner unit provides abundant natural light and an unblocked view of the central courtyard. Located immediately adjacent to Giga Mall with direct urban highway connectivity.",
-        category: "Apartment",
+        category: "apartments",
         purpose: "for-sale",
         badge: "new",
         price: {
@@ -423,7 +414,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_007",
         title: "Chic 1-Bedroom Executive Flat in DHA Phase 3",
         description: "A masterfully designed 1-bedroom executive flat offering a seamless open-plan kitchen and living space. Features integrated hidden appliances, customized oak wood cabinets, micro-cement flooring, and smart climate zoning. Situated in a newly completed boutique building perfect for young professionals or corporate rentals.",
-        category: "Apartment",
+        category: "apartments",
         purpose: "for-sale",
         badge: "new",
         price: {
@@ -470,7 +461,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_008",
         title: "Spacious 3-Bedroom Corner Flat with Double Balcony",
         description: "An expansive 3-bedroom corner flat located in one of DHA Phase 2's premier mid-rise complexes. This unit stands out with its dual wide balconies offering views of the central park, a completely separate dining lounge, and attached maid's quarters. Fully equipped with Turkish kitchen fittings and central gas lines already active.",
-        category: "Apartment",
+        category: "apartments",
         purpose: "for-sale",
         badge: "price-drop",
         price: {
@@ -521,7 +512,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_013",
         title: "Spacious 3-Bedroom Corner Flat with Double Balcony",
         description: "An expansive 3-bedroom corner flat located in one of DHA Phase 2's premier mid-rise complexes. This unit stands out with its dual wide balconies offering views of the central park, a completely separate dining lounge, and attached maid's quarters. Fully equipped with Turkish kitchen fittings and central gas lines already active.",
-        category: "Apartment",
+        category: "apartments",
         purpose: "for-sale",
         badge: "price-drop",
         price: {
@@ -571,7 +562,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_011",
         title: "8 Marla Corporate Plaza Plot - DHA Phase 5 Main Boulevard",
         description: "A highly lucrative 8 Marla premium commercial plot located on the primary commercial loop of DHA Phase 5, Islamabad. This site offers an expansive 40-foot front facing the main boulevard, with pre-cleared permissions for an extensive multi-level retail and corporate office development. Fully developed with immediate utility connections available.",
-        category: "Commercial Plot",
+        category: "commercial",
         purpose: "for-sale",
         badge: "new",
         price: {
@@ -620,7 +611,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_012",
         title: "1 Kanal Residential Plot for Sale - Phase 4 Overseas Block",
         description: "An exceptional, fully leveled 1 Kanal residential plot located in the premium, highly elevated Overseas Block of DHA Phase 4, Islamabad. This plot offers panoramic views of the Soan River basin and is surrounded by rapid high-end villa construction. All development charges are fully paid, making it ready for immediate map approval and groundbreaking.",
-        category: "Plot",
+        category: "commercial",
         purpose: "for-sale",
         badge: "new",
         price: {
@@ -667,7 +658,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_0110",
         title: "Modern Retail Shop in Luxury Commercial Mall",
         description: "An excellent investment opportunity or retail space setup in DHA Phase 2, Islamabad. This compact shop is situated on the first floor of a newly developed high-footfall commercial plaza. Perfectly suited for a boutique apparel studio, mobile franchise, or specialized electronics kiosk.",
-        category: "Shop",
+        category: "shops",
         purpose: "for-sale",
         badge: "hot",
         price: {
@@ -715,7 +706,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_014",
         title: "Ground Floor Premium Food Court Kiosk",
         description: "A high-visibility 180 Sq. Ft. commercial shop/kiosk tailored specifically for a fast-food franchise or dessert parlor. Located on the bustling lower ground level food enclave in DHA Phase 5. Benefits from an immediate shared seating layout and exceptional daily foot traffic.",
-        category: "Shop",
+        category: "shops",
         purpose: "for-sale",
         badge: "new",
         price: {
@@ -761,7 +752,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_015",
         title: "Premium Corporate Office Space in Business Hub Plaza",
         description: "An exceptional, fully corporate-ready office space occupying a prime corner position on the 5th floor of a prestigious commercial high-rise in DHA Phase 2. This space features massive double-glazed soundproof glass walls that overlook the main expressway, an executive suite layout, open-plan workstations, and an independent server room.",
-        category: "Office",
+        category: "Offices",
         purpose: "for-sale",
         badge: "hot",
         price: {
@@ -812,7 +803,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_016",
         title: "9.5 Crore Luxury Corporate Headquarter Floor Wing",
         description: "An elite, sprawling corporate office layout spanning a massive half-floor wing in a Grade-A commercial tower within DHA Phase 2, Islamabad. Designed for multinatonal firms, tech hubs, or large financial institutes, this premium space includes fully integrated data cabling, a grand reception lounge, an expansive boardroom, and glass-partitioned managerial suites with panoramic city views.",
-        category: "Office",
+        category: "Offices",
         purpose: "for-sale",
         badge: "new",
         price: {
@@ -861,7 +852,7 @@ export const listings: PropertyListing[] = [
         id: "prop_dha_2026_017",
         title: "2 Kanal Compact Contemporary Farmhouse",
         description: "An elegant and modern 2 Kanal boutique farmhouse setup located in the scenic, serene outskirts of DHA Phase 4 Extension / Phase 3. This property offers the perfect balance of rustic farmhouse living and modern lifestyle amenities. Features an open-concept kitchen, manicured boundary lawns, an organic kitchen garden patch, and an elevated patio deck ideal for evening barbecues.",
-        category: "Farm House",
+        category: "farm-houses",
         purpose: "for-sale",
         badge: "new",
         price: {
@@ -904,5 +895,202 @@ export const listings: PropertyListing[] = [
         thumbnail: "/listings/fh1i1.webp",
         featured: false,
         createdAt: "2026-06-01T10:44:33Z"
+    }, {
+        id: "prop_dha_2026_018",
+        title: "13.5 Crore Ultra-Luxury Designer Villa Overlooking Golf Course",
+        description: "An architectural masterpiece in DHA Phase 2 (Emaar Canyon Views / Golf Enclave). This magnificent 1 Kanal designer villa features custom Spanish stone facades, double-height ceilings, a private glass-walled infinity pool, and a custom automated home theater system. Crafted for premium luxury living with breathtaking sunset views over the golf course.",
+        category: "villas",
+        purpose: "for-sale",
+        badge: "hot",
+        price: {
+            amount: 135000000, // 13.5 Crore PKR
+            currency: "PKR",
+            period: null
+        },
+        location: {
+            city: "Islamabad",
+            area: "DHA Phase 2",
+            address: "Golf Course Enclave, Sector View Block, DHA Phase 2, Islamabad",
+            coordinates: {
+                lat: 33.5298,
+                lng: 73.1624
+            }
+        },
+        contact: {
+            email: "executive@signaturevillas.pk",
+            whatsapp: "+923005554499",
+            phone: "+92515554499"
+        },
+        details: [
+            { name: "Bedrooms", value: 5 },
+            { name: "Bathrooms", value: 6 },
+            { name: "Total Area Size", value: "1 Kanal" },
+            { name: "Covered Area", value: "6,800 Sq. Ft." },
+            { name: "Home Theater Capacity", value: "8 Seats" },
+            { name: "Basement Level", value: "Fully Finished Lounge" }
+        ],
+        amenities: [
+            "Private Glass-Walled Infinity Pool",
+            "Full Smart Home Automation (Crestron)",
+            "Premium Turkish/Italian Designer Kitchens",
+            "Dedicated Soundproof Home Theater Room",
+            "15kW Hybrid Solar Power System Installed",
+            "Panoramic Golf Course Views",
+            "Independent 2-Room Servant Quarter Wing"
+        ],
+        images: [
+            "/listings/v1i2.webp", // Luxury villa exterior with pool
+            "/listings/v1i3.webp", // Luxury villa exterior with pool
+        ],
+        thumbnail: "/listings/v1i1.webp",
+        featured: true,
+        createdAt: "2026-06-01T11:23:51Z"
+    }, {
+        id: "prop_dha_2026_019",
+        title: "1 Kanal Beautiful Executive House for Rent - DHA Phase 2",
+        description: "A meticulously maintained, beautifully designed 1 Kanal family home available for immediate rent in a peaceful block of DHA Phase 2, Islamabad. Features a spacious double-height lounge, a large separate dining hall, solid ash wood carpentry, and two independent kitchens. Perfectly suited for expatriates, corporate executives, or diplomatic staff.",
+        category: "homes",
+        purpose: "for-rent",
+        badge: "new",
+        price: {
+            amount: 240000, // 2.40 Lacs PKR
+            currency: "PKR",
+            period: "monthly" // 👈 Populated for rental structure tracking
+        },
+        location: {
+            city: "Islamabad",
+            area: "DHA Phase 2",
+            address: "Sector G, Street 8, Near Central Park, DHA Phase 2, Islamabad",
+            coordinates: {
+                lat: 33.5278,
+                lng: 73.1539
+            }
+        },
+        contact: {
+            email: "rentals@eliteagents.com",
+            whatsapp: "+923009876543",
+            phone: "+92519876543"
+        },
+        details: [
+            { name: "Bedrooms", value: 5 },
+            { name: "Bathrooms", value: 6 },
+            { name: "Area Size", value: "1 Kanal" },
+            { name: "Independent Kitchens", value: 2 },
+            { name: "Servant Quarters", value: 1 },
+            { name: "Advance Security Deposit", value: "3 Months Rental" }
+        ],
+        amenities: [
+            "Separate Gas & Electricity Meters",
+            "Large Covered Parking Garage (3 Cars)",
+            "Underground & Overhead Water Storage Tanks",
+            "Walking Distance to Main Commercial Corridor",
+            "UPS/Inverter Line Configuration Complete",
+            "High-Security Gated Block Street Patrol",
+            "Beautiful Lawn and Patio Garden Area"
+        ],
+        images: [
+            "/listings/rh1i2.webp", // Main house facade
+            "/listings/rh1i3.webp", // Main house facade
+            "/listings/rh1i4.webp", // Main house facade
+        ],
+        thumbnail: "/listings/rh1i1.webp",
+        featured: false,
+        createdAt: "2026-06-01T11:28:14Z"
+    }, {
+        id: "prop_dha_2026_020",
+        title: "10 Marla Executive House for Rent - Sector A, Phase 5",
+        description: "A beautifully constructed, structurally sound 10 Marla double-story house available for rent in DHA Phase 5, Islamabad. The property features a compact, smart-spatial layout including a brightly lit lounge, modern kitchen cabinets, and imported tile work. Located in a pristine, secured street just minutes away from the main commercial boulevard and sports complex.",
+        category: "homes",
+        purpose: "for-rent",
+        badge: "hot",
+        price: {
+            amount: 145000, // 1.45 Lacs PKR
+            currency: "PKR",
+            period: "monthly"
+        },
+        location: {
+            city: "Islamabad",
+            area: "DHA Phase 5",
+            address: "Sector A, Street 3, DHA Phase 5, Islamabad",
+            coordinates: {
+                lat: 33.5142,
+                lng: 73.1691
+            }
+        },
+        contact: {
+            whatsapp: "+923315558822",
+            phone: "+92515558822"
+        },
+        details: [
+            { name: "Bedrooms", value: 4 },
+            { name: "Bathrooms", value: 5 },
+            { name: "Area Size", value: "10 Marla" },
+            { name: "Kitchens", value: 2 },
+            { name: "Parking Spaces", value: 2 },
+            { name: "Security Deposit", value: "2 Months Advance" }
+        ],
+        amenities: [
+            "24/7 Gated Security Patrol",
+            "Dedicated UPS & Inverter Wiring Setup",
+            "Active Sui Gas Meter",
+            "Compact Front Manicured Lawn",
+            "Powder Room for Guests",
+            "Walking Distance to Sector Park & Mosque"
+        ],
+        images: [
+            "/listings/rh2i1.webp", // Main house facade
+            "/listings/rh2i3.webp", // Main house facade
+        ],
+        thumbnail: "/listings/rh2i2.webp",
+        featured: false,
+        createdAt: "2026-06-01T11:33:00Z"
+    }, {
+        id: "prop_dha_2026_021",
+        title: "Luxurious 20 Marla Brand New House for Rent",
+        description: "An ultra-modern, newly constructed 20 Marla (1 Kanal) double-story residence available for immediate lease in DHA Phase 2, Islamabad. Designed with an expansive open-layout concept, this high-end property boasts massive drawing and dining halls, solid Turkish tile finishes, a premium dirty-kitchen annex, and a wonderfully landscaped front lawn area. Perfect for elite diplomatic or executive families.",
+        category: "homes",
+        purpose: "for-rent",
+        badge: "hot",
+        price: {
+            amount: 310000, // 3.10 Lacs PKR
+            currency: "PKR",
+            period: "monthly"
+        },
+        location: {
+            city: "Islamabad",
+            area: "DHA Phase 2",
+            address: "Sector B, Main Park Avenue, DHA Phase 2, Islamabad",
+            coordinates: {
+                lat: 33.5251,
+                lng: 73.1567
+            }
+        },
+        contact: {
+            email: "leasing@dhapremier.com",
+            whatsapp: "+923219994455"
+        },
+        details: [
+            { name: "Bedrooms", value: 5 },
+            { name: "Bathrooms", value: 6 },
+            { name: "Area Size", value: "20 Marla / 1 Kanal" },
+            { name: "Covered Area", value: "5,400 Sq. Ft." },
+            { name: "Servant Quarters", value: 2 },
+            { name: "Security Deposit", value: "3 Months Advance" }
+        ],
+        amenities: [
+            "10kW Net-Metered Solar Panel Grid",
+            "Smart App-Controlled CCTV Network",
+            "Secured Covered Garage (Up to 4 Cars)",
+            "Premium Imported Jacuzzi Baths",
+            "Dedicated Laundry and Storage Rooms",
+            "Active Independent Gas and Water Meters",
+            "Breathtaking Skyline and Park View Deck"
+        ],
+        images: [
+            "/listings/rh3i2.webp", // Main house facade
+        ],
+        thumbnail: "/listings/rh3i1.webp",
+        featured: true,
+        createdAt: "2026-06-01T11:38:35Z"
     }
 ];
