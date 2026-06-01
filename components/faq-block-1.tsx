@@ -8,77 +8,66 @@ type FaqItem = {
 
 const faqItems: FaqItem[] = [
   {
-    value: 'item-1',
-    question: 'What services does your agency provide?',
+    value: "item-1",
+    question: "What services does Elite Associates provide?",
     answer:
-      'We specialize in web development, modern UI/UX design, Google Business Profile optimization, and professional graphic design solutions for businesses of all sizes.',
+      "We help clients buy, sell, and rent residential and commercial properties, along with providing investment guidance and property consultation services.",
   },
   {
-    value: 'item-2',
-    question: 'Do you create mobile-friendly websites?',
+    value: "item-2",
+    question: "Do you deal in both residential and commercial properties?",
     answer:
-      'Yes, every website we build is fully responsive and optimized for mobile, tablet, and desktop devices to ensure the best user experience.',
+      "Yes, we deal in houses, apartments, villas, plots, and commercial properties including offices, shops, and buildings.",
   },
   {
-    value: 'item-3',
-    question: 'Can you redesign my existing website?',
+    value: "item-3",
+    question: "Can you help me find a property within my budget?",
     answer:
-      'Absolutely. We can redesign outdated websites with modern layouts, improved performance, better user experience, and conversion-focused design.',
+      "Absolutely. We help clients find properties based on their budget, location preference, and requirements to ensure the best match.",
   },
   {
-    value: 'item-4',
-    question: 'What is Google Business Profile optimization?',
+    value: "item-4",
+    question: "Do you offer property for rent as well?",
     answer:
-      'Google Business Profile optimization helps your business appear in local Google searches and maps, improving visibility, customer trust, and local lead generation.',
+      "Yes, we offer a wide range of rental properties including houses, apartments, and commercial spaces across different locations.",
   },
   {
-    value: 'item-5',
-    question: 'Do you offer custom graphic design services?',
+    value: "item-5",
+    question: "Is there any commission or service fee?",
     answer:
-      'Yes, we create logos, social media graphics, banners, brand assets, marketing materials, and other custom designs tailored to your business identity.',
+      "Yes, a standard commission is charged upon successful property deal completion. The exact fee depends on the property type and agreement.",
   },
   {
-    value: 'item-6',
-    question: 'How long does a project usually take?',
+    value: "item-6",
+    question: "Can I list my property with Elite Associates?",
     answer:
-      'Project timelines depend on the scope and complexity. Most websites and branding projects are completed within a few days to a few weeks.',
-  }, {
-    value: 'item-7',
-    question: 'Do you help with Google Business Profile setup?',
-    answer:
-      'Yes, we help businesses create, set up, and optimize their Google Business Profile to improve local visibility, attract more customers, and build trust online.',
+      "Yes, property owners can contact us to list their property for sale or rent. We handle marketing and buyer/renter matching.",
   },
   {
-    value: 'item-8',
-    question: 'Can you manage and update my Google Business Profile?',
+    value: "item-7",
+    question: "How do I verify a property before buying?",
     answer:
-      'Absolutely. We can update business information, add services, upload professional graphics, optimize descriptions, and keep your profile active for better local reach.',
+      "We assist in verifying property documents, ownership details, and legal status to ensure a safe and transparent transaction.",
   },
   {
-    value: 'item-9',
-    question: 'Do you provide SEO services for websites?',
+    value: "item-8",
+    question: "Do you help with property investment guidance?",
     answer:
-      'We implement basic on-page SEO best practices, including fast performance, responsive design, proper structure, and search-friendly content setup to help improve visibility.',
+      "Yes, we provide investment advice based on market trends, location growth, and expected returns to help you make informed decisions.",
   },
   {
-    value: 'item-10',
-    question: 'Will my website be easy to manage after launch?',
+    value: "item-9",
+    question: "Which locations do you operate in?",
     answer:
-      'Yes, we build websites with clean structures and user-friendly management options so you can easily update content, images, and business information when needed.',
+      "We operate in multiple cities and regions, helping clients find properties in prime residential and commercial areas.",
   },
   {
-    value: 'item-11',
-    question: 'Do you work with small businesses and startups?',
+    value: "item-10",
+    question: "How can I contact Elite Associates?",
     answer:
-      'Yes, we work with startups, local businesses, and growing brands looking to establish a professional and effective online presence.',
+      "You can contact us via phone, WhatsApp, email, or through our website contact form. Our team responds quickly to all inquiries.",
   },
-  {
-    value: 'item-12',
-    question: 'How can I get started with your agency?',
-    answer:
-      'You can contact us through our website or social platforms to discuss your project, business goals, and the digital solutions you need.',
-  }
-]
+];
 const FaqBlock1 = () => {
   return (
     <div className='w-full py-16'>

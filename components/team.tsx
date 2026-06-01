@@ -1,55 +1,53 @@
-
 const teamMembers = [
   {
-    name: "John Doe",
+    name: "Ahmed Raza",
     title: "Founder & CEO",
     imageUrl:
-      "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://randomuser.me/api/portraits/men/1.jpg",
   },
   {
-    name: "Jane Doe",
-    title: "Engineering Manager",
+    name: "Hassan Ali",
+    title: "Senior Property Consultant",
     imageUrl:
-      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://randomuser.me/api/portraits/men/13.jpg",
   },
   {
-    name: "Bob Smith",
-    title: "Product Manager",
+    name: "Muhammad Usman",
+    title: "Sales & Leasing Manager",
     imageUrl:
-      "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://randomuser.me/api/portraits/men/10.jpg",
   },
   {
-    name: "Peter Johnson",
-    title: "Frontend Developer",
+    name: "Ali Raza",
+    title: "Real Estate Advisor",
     imageUrl:
-      "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://randomuser.me/api/portraits/men/4.jpg",
   },
   {
-    name: "David Lee",
-    title: "Backend Developer",
+    name: "Bilal Khan",
+    title: "Commercial Property Specialist",
     imageUrl:
-      "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
-    name: "Sarah Williams",
-    title: "Product Designer",
+    name: "Saad Ahmed",
+    title: "Residential Property Consultant",
     imageUrl:
-      "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://randomuser.me/api/portraits/men/6.jpg",
   },
   {
-    name: "Michael Brown",
-    title: "UX Researcher",
+    name: "Fahad Iqbal",
+    title: "Investment & Market Analyst",
     imageUrl:
-      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://randomuser.me/api/portraits/men/7.jpg",
   },
   {
-    name: "Elizabeth Johnson",
-    title: "Customer Success",
+    name: "Omar Farooq",
+    title: "Client Relations Manager",
     imageUrl:
-      "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://randomuser.me/api/portraits/men/9.jpg",
   },
 ];
-
 const Team = () => {
   return (
     <div className="flex flex-col items-center justify-center px-4 py-20 sm:px-6 lg:px-8">
@@ -60,9 +58,8 @@ const Team = () => {
         <h2 className="mt-4 font-medium text-4xl tracking-[-0.04em] sm:text-[2.75rem]">
           Meet Our Team
         </h2>
-        <p className="mt-4 text-base text-muted-foreground -tracking-[0.01em] sm:text-xl">
-          Our philosophy is simple — hire a team of passionate people and foster
-          a culture that empowers you to do you best work.
+        <p className="mt-4 text-base text-muted-foreground tracking-[-0.01em] sm:text-xl">
+          Our dedicated team of real estate professionals is committed to helping you buy, sell, and rent properties with confidence.
         </p>
       </div>
 

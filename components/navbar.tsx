@@ -163,7 +163,7 @@ const Navbar1 = ({
                         >
                             <img
                                 src={"/text-logo.png"}
-                                className="max-h-10 dark:invert "
+                                className="max-h-10 dark:invert rounded-lg"
                                 alt={logo.alt}
                             />
                         </Link>

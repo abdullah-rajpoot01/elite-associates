@@ -1,5 +1,4 @@
 import AboutFeatures from '@/components/about/about-features'
-import CTA from '@/components/about/cta'
 import Hero from '@/components/hero'
 import Timeline from '@/components/team'
 import type { Metadata } from "next";
@@ -40,7 +39,6 @@ const Page = () => {
      <Hero/>
      <AboutFeatures/>   
      <Timeline/>
-     <CTA/>
     </>
   )
 }

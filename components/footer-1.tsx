@@ -15,13 +15,11 @@ const Footer1 = () => {
     {
       title: "Quick Links",
       links: [
-      { label: "Homes", url: "#" },
-      { label: "Plots", url: "#" },
-      { label: "Flats", url: "#" },
-      { label: "Shops", url: "#" },
-      { label: "Commercial", url: "#" },
-      { label: "For Rent", url: "#" },
-      { label: "Farm Houses", url: "#" },
+      { label: "Homes", url: "/" },
+      { label: "Properties", url: "/listings" },
+      { label: "Categories", url: "/categories" },
+      { label: "For Sale", url: "/listings/for-sale" },
+      { label: "For Rent", url: "/listings/for-rent" },
       ],
     },
     {
@@ -61,7 +59,7 @@ const Footer1 = () => {
             />
           </Link>
           <p className="max-w-102 text-sm mt-6 ">
-            We don’t just build websites or create content — we build a complete digital presence that attracts high-value clients, boosts credibility, and turns visitors into loyal customers.
+            Elite Associates Real Estate Agency helps you buy, sell, and invest in residential and commercial properties with expert guidance and transparent, hassle-free service.
           </p>
         </div>
 

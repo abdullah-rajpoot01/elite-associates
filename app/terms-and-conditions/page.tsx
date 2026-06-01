@@ -47,118 +47,118 @@ export const metadata: Metadata = {
     images: ["/og-default.png"],
   },
 };
-// Data structure for the terms and conditions page
-const termsData = {
-  lastUpdated: 'May 11, 2026',
-  effectiveDate: 'May 11, 2026',
 
-  heading: 'Terms and Conditions',
+const termsData = {
+  lastUpdated: "June 1, 2026",
+  effectiveDate: "June 1, 2026",
+
+  heading: "Terms and Conditions",
 
   description:
-    'Please read these Terms and Conditions carefully before using our website or digital services. By accessing our platform or working with our agency, you agree to comply with these terms.',
+    "Please read these Terms and Conditions carefully before using the Elite Associates Real Estate website or engaging in any property-related services. By accessing our platform or using our services, you agree to comply with these terms.",
 
   terms: [
     {
-      id: 'acceptance',
-      title: 'Acceptance of Terms',
+      id: "acceptance",
+      title: "Acceptance of Terms",
       description:
-        'By using our website or services, you confirm that you have read, understood, and agreed to these Terms and Conditions. If you do not agree with any part of these terms, please discontinue use of our services.',
+        "By using our website or real estate services, you confirm that you have read, understood, and agreed to these Terms and Conditions. If you do not agree, you should stop using our services immediately.",
       icon: FileText,
     },
 
     {
-      id: 'services',
-      title: 'Our Services',
+      id: "services",
+      title: "Our Services",
       description:
-        'We provide digital services including website development, UI/UX design, graphic design, branding, and Google Business Profile Setup, optimization. Service details, timelines, and pricing are discussed individually with each client.',
+        "Elite Associates provides real estate services including buying, selling, and renting residential and commercial properties, along with property consultation and investment assistance. Service availability may vary based on location and market conditions.",
       icon: Briefcase,
     },
 
     {
-      id: 'client-responsibilities',
-      title: 'Client Responsibilities',
+      id: "client-responsibilities",
+      title: "Client Responsibilities",
       description:
-        'Clients are responsible for providing accurate information, project requirements, content, and feedback required for project completion. Delays in communication or approvals may affect delivery timelines.',
+        "Clients are responsible for providing accurate personal details, property requirements, and relevant documentation when engaging in property transactions. Delays in response or incorrect information may affect service outcomes.",
       icon: UserCheck,
     },
 
     {
-      id: 'payments',
-      title: 'Payments and Pricing',
+      id: "payments",
+      title: "Payments and Commission",
       description:
-        'All project payments must be completed according to the agreed payment terms. Prices may vary depending on project scope and requirements. Work may be paused if payments are delayed beyond the agreed schedule.',
+        "Commission or service fees are applicable upon successful completion of property transactions. The exact percentage or amount will be agreed upon before finalizing any deal.",
       icon: DollarSign,
     },
 
     {
-      id: 'revisions',
-      title: 'Project Revisions',
+      id: "revisions",
+      title: "Property Listings and Updates",
       description:
-        'Reasonable revisions are included based on the selected service package. Additional revisions or major scope changes may require extra charges.',
+        "We strive to keep property listings accurate and up to date. However, availability, pricing, and property details may change without prior notice due to market activity.",
       icon: RefreshCw,
     },
 
     {
-      id: 'intellectual-property',
-      title: 'Intellectual Property',
+      id: "intellectual-property",
+      title: "Property Information Usage",
       description:
-        'All final approved designs and website assets become the client’s property after full payment is completed. We reserve the right to showcase completed projects in our portfolio unless otherwise agreed.',
+        "All property listings, images, and content on our website are for informational purposes. Unauthorized copying, redistribution, or commercial use of our listings is not permitted.",
       icon: Scale,
     },
 
     {
-      id: 'prohibited-use',
-      title: 'Prohibited Use',
+      id: "prohibited-use",
+      title: "Prohibited Use",
       description:
-        'You may not use our services for illegal, fraudulent, harmful, or unethical activities. We reserve the right to refuse or terminate services that violate applicable laws or community standards.',
+        "Users must not use our platform for fraudulent, illegal, or misleading property activities. Any attempt to manipulate listings or provide false information may result in service termination.",
       icon: AlertCircle,
     },
 
     {
-      id: 'third-party',
-      title: 'Third-Party Tools and Services',
+      id: "third-party",
+      title: "Third-Party Listings and Services",
       description:
-        'Some projects may involve third-party platforms, plugins, hosting providers, or external services. We are not responsible for outages, limitations, or policy changes made by third-party providers.',
+        "Some properties or services may involve third-party agents, developers, or platforms. We are not responsible for external service policies, delays, or changes.",
       icon: Shield,
     },
 
     {
-      id: 'project-delivery',
-      title: 'Project Delivery',
+      id: "project-delivery",
+      title: "Transaction Timelines",
       description:
-        'Project timelines are estimated based on the agreed scope. Delivery times may vary depending on revisions, client feedback, or unforeseen technical issues.',
+        "Property buying, selling, or renting timelines may vary depending on legal procedures, documentation, and buyer/seller agreement processes.",
       icon: Zap,
     },
 
     {
-      id: 'limitations',
-      title: 'Limitation of Liability',
+      id: "limitations",
+      title: "Limitation of Liability",
       description:
-        'While we strive to provide high-quality services, we are not liable for indirect losses, business interruptions, lost profits, or damages resulting from the use of our services or website.',
+        "While we aim to provide accurate property information and professional service, we are not liable for financial loss, market fluctuations, or third-party transaction issues.",
       icon: Lock,
     },
 
     {
-      id: 'termination',
-      title: 'Termination of Services',
+      id: "termination",
+      title: "Termination of Services",
       description:
-        'We reserve the right to suspend or terminate services if a client violates these terms, engages in abusive behavior, or fails to complete agreed payments.',
+        "We reserve the right to refuse or terminate services if any client engages in fraudulent activity, provides false information, or violates legal property regulations.",
       icon: AlertCircle,
     },
 
     {
-      id: 'changes',
-      title: 'Changes to Terms',
+      id: "changes",
+      title: "Changes to Terms",
       description:
-        'We may update these Terms and Conditions at any time. Updated versions will be published on this page with the latest revision date.',
+        "We may update these Terms and Conditions at any time to reflect legal, operational, or business changes. Updates will be posted on this page with a revised date.",
       icon: RefreshCw,
     },
 
     {
-      id: 'contact',
-      title: 'Contact Information',
+      id: "contact",
+      title: "Contact Information",
       description:
-        'If you have any questions regarding these Terms and Conditions, you can contact us through our website contact form or official business email.',
+        "If you have any questions regarding these Terms and Conditions, you can contact Elite Associates through our official phone, email, or website contact form.",
       icon: Mail,
     },
   ],

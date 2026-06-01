@@ -42,91 +42,90 @@ export const metadata: Metadata = {
   },
 };
 
-// Data structure for the privacy policy page
 const privacyPolicyData = {
-  lastUpdated: 'May 11, 2026',
-  heading: 'Privacy Policy',
+  lastUpdated: "June 1, 2026",
+  heading: "Privacy Policy",
   description:
-    'We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard the information you share with us when using our website and digital services.',
+    "At Elite Associates Real Estate, we respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you interact with our website or real estate services.",
 
   policies: [
     {
-      id: 'information-collection',
-      title: 'Information We Collect',
+      id: "information-collection",
+      title: "Information We Collect",
       description:
-        'We may collect personal information such as your name, email address, phone number, business details, and project information when you contact us or use our services. We may also collect technical information such as browser type, IP address, and device information for analytics and website performance purposes.',
+        "We may collect personal details such as your name, phone number, email address, and property preferences when you inquire about buying, selling, or renting a property. We may also collect technical data such as IP address, browser type, and device information to improve website performance and user experience.",
       icon: Database,
     },
 
     {
-      id: 'information-usage',
-      title: 'How We Use Your Information',
+      id: "information-usage",
+      title: "How We Use Your Information",
       description:
-        'We use your information to communicate with you, provide our services, improve user experience, respond to inquiries, manage projects, and enhance our website functionality. We may also use your information for customer support and business-related updates.',
+        "We use your information to respond to property inquiries, connect buyers and sellers, provide rental and investment assistance, and improve our real estate services. Your data also helps us personalize property recommendations and improve communication.",
       icon: Eye,
     },
 
     {
-      id: 'information-sharing',
-      title: 'Information Sharing',
+      id: "information-sharing",
+      title: "Information Sharing",
       description:
-        'We do not sell, rent, or trade your personal information to third parties. Your information may only be shared with trusted service providers when necessary to deliver our services or comply with legal obligations.',
+        "We do not sell or rent your personal data. Your information may be shared only with trusted agents, property owners, or legal authorities when necessary to complete a real estate transaction or comply with legal requirements.",
       icon: Users,
     },
 
     {
-      id: 'data-security',
-      title: 'Data Security',
+      id: "data-security",
+      title: "Data Security",
       description:
-        'We take appropriate security measures to protect your information against unauthorized access, misuse, or disclosure. While we strive to use commercially acceptable methods to safeguard data, no online system is completely secure.',
+        "We use reasonable security measures to protect your personal information from unauthorized access or misuse. However, no digital transmission or storage system can be guaranteed 100% secure.",
       icon: Lock,
     },
 
     {
-      id: 'cookies',
-      title: 'Cookies and Analytics',
+      id: "cookies",
+      title: "Cookies and Analytics",
       description:
-        'Our website may use cookies and analytics tools to improve website performance, analyze visitor behavior, and enhance your browsing experience. You can disable cookies through your browser settings if preferred.',
+        "Our website uses cookies and analytics tools to understand user behavior, improve property search experience, and optimize performance. You may disable cookies in your browser settings at any time.",
       icon: Cookie,
     },
 
     {
-      id: 'third-party-links',
-      title: 'Third-Party Services',
+      id: "third-party-links",
+      title: "Third-Party Services",
       description:
-        'Our website may include links to third-party websites or services. We are not responsible for the privacy practices or content of external websites and encourage users to review their policies separately.',
+        "Our website may contain links to third-party platforms such as property portals or external listings. We are not responsible for their privacy practices and encourage users to review their policies separately.",
       icon: Globe,
     },
 
     {
-      id: 'user-rights',
-      title: 'Your Rights',
+      id: "user-rights",
+      title: "Your Rights",
       description:
-        'You have the right to request access to, correction of, or deletion of your personal information. If you would like to update or remove your information, please contact us directly.',
+        "You have the right to access, update, or request deletion of your personal information. For any such requests related to property inquiries or listings, you may contact our support team directly.",
       icon: Shield,
     },
 
     {
-      id: 'children-privacy',
+      id: "children-privacy",
       title: "Children's Privacy",
       description:
-        'Our services are not intended for children under the age of 13. We do not knowingly collect personal information from children.',
+        "Our services are intended for individuals aged 18 and above. We do not knowingly collect personal information from minors.",
       icon: AlertTriangle,
     },
 
     {
-      id: 'contact-us',
-      title: 'Contact Us',
+      id: "contact-us",
+      title: "Contact Us",
       description:
-        'If you have any questions regarding this Privacy Policy or your personal data, you can contact us through our website contact form or official business email.',
+        "If you have any questions about this Privacy Policy or how your data is handled, you can contact Elite Associates through our official email, phone, or website contact form.",
       icon: Mail,
     },
 
     {
-      id: 'policy-changes',
-      title: 'Updates to This Policy',
+      id: "policy-changes",
+      title: "Updates to This Policy",
       description:
-        'We may update this Privacy Policy from time to time to reflect changes in our services or legal requirements. Updated versions will always be posted on this page with the latest revision date.',
+        "We may update this Privacy Policy from time to time to reflect changes in legal requirements or our real estate services. Any updates will be posted on this page with a revised date.",
       icon: FileText,
     },
   ],
