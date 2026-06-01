@@ -5,6 +5,19 @@ import { categories, listings } from '@/content/data';
 import { Search } from 'lucide-react';
 import { notFound } from 'next/navigation';
 
+// 1. Define the parameters type based on the folder [slug]
+export type CategoryPageParams = {
+  slug: string;
+};
+
+// 2. Generate static paths from your predefined category slugs
+export async function generateStaticParams(): Promise<CategoryPageParams[]> {
+  return categories.map((category) => ({
+    slug: category.slug, // maps directly to [slug] (handles "villas", "Offices", "farm-houses", etc.)
+  }));
+}
+
+// 3. Enforce 404 for any unregistered slugs (e.g., /categories/penthouses)
 
 type PageProps = {
     params: Promise<{ slug: string }>;

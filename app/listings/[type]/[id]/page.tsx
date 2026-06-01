@@ -3,6 +3,26 @@ import RelatedListing from '@/components/listing/related-listings';
 import { listings } from '@/content/data';
 import { notFound } from 'next/navigation';
 
+
+// 1. Define the structural type matching your route parameters
+export type ListingParams = {
+  type: "for-sale" | "for-rent";
+  id: string;
+};
+
+// 2. Generate static paths instantly from your static array
+export async function generateStaticParams(): Promise<ListingParams[]> {
+  return listings.map((property) => ({
+    type: property.purpose as "for-sale" | "for-rent", // maps to [type]
+    id: property.id,                                   // maps to [id]
+  }));
+}
+
+// 3. Keep this false if you only want to allow paths present in your static data array
+export const dynamicParams = false;
+
+
+
 type PageProps = {
   params: Promise<{ 
     type: "for-sale" | "for-rent" | string; // Stricter typing

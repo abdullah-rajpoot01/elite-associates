@@ -73,6 +73,8 @@ export type PropertyListing = {
 type Category = {
     name: string;
 
+    description: string;
+
     image: string;
 
     slug: string;
@@ -80,36 +82,43 @@ type Category = {
 export const categories: Category[] = [
     {
         name: "Luxury Villas",
+        description: "Premium villas with modern amenities, swimming pools, and prime locations in gated communities",
         image: "/listings/Gemini_Generated_Image_x51bk6x51bk6x51b.webp",
         slug: "villas"
     },
     {
         name: "Apartments",
+        description: "Modern apartments ranging from studios to penthouses in prime city locations",
         image: "/listings/a2i1.webp",
         slug: "apartments"
     },
     {
         name: "Homes",
+        description: "Spacious houses perfect for families with gardens, servant quarters, and secure neighborhoods",
         image: "/listings/h2i1.webp",
         slug: "homes"
     },
     {
         name: "Commercial",
+        description: "Office spaces, retail shops, warehouses, and commercial buildings for business",
         image: "/listings/p1i1.webp",
         slug: "commercial"
     },
     {
         name: "Shops",
+        description: "Office spaces, retail shops, warehouses, and commercial buildings for business",
         image: "/listings/s1i1.webp",
         slug: "shops"
     },
     {
         name: "Offices",
-        image: "/listings/f2i1.webp",
+        description: "Office spaces, retail shops, warehouses, and commercial buildings for business",
+        image: "/listings/fi1.webp",
         slug: "Offices"
     },
     {
         name: "Farm Houses",
+        description: "Peaceful farm houses with orchards, swimming pools, and vast land for recreation",
         image: "/listings/fh1i1.webp",
         slug: "farm-houses"
     }
@@ -953,7 +962,7 @@ export const listings: PropertyListing[] = [
         purpose: "for-rent",
         badge: "new",
         price: {
-            amount: 240000, // 2.40 Lacs PKR
+            amount: 2400000, // 2.40 Lacs PKR
             currency: "PKR",
             period: "monthly" // 👈 Populated for rental structure tracking
         },

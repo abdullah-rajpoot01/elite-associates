@@ -1,7 +1,22 @@
 import PropertyCard from '@/components/listing/card';
 import { listings } from '@/content/data';
 import { notFound } from 'next/navigation';
-import React from 'react'
+
+// 1. Define the parameters type
+export type CategoryParams = {
+  type: "for-sale" | "for-rent";
+};
+
+export async function generateStaticParams(): Promise<CategoryParams[]> {
+  return [
+    { type: "for-sale" },
+    { type: "for-rent" },
+  ];
+}
+
+// 3. Prevent any fallback paths (e.g., /listing/anything-else returns 404)
+export const dynamicParams = false;
+
 type PageProps = {
     params: Promise<{ type: string }>;
 };
