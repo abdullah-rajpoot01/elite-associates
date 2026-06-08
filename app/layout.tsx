@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
@@ -17,7 +17,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 
 export const metadata: Metadata = {
   title: "Elite Associates | Find Your Dream Land",
@@ -60,9 +59,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
+      className={cn("antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
     >
-      <body suppressHydrationWarning className="min-h-full flex flex-col max-w-7xl mx-auto">
+      <body suppressHydrationWarning className="min-h-dvh  flex flex-col max-w-7xl mx-auto">
         <Navbar1 />
         {children}
         <Footer1 />

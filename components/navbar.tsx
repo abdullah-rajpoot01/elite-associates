@@ -33,7 +33,6 @@ import { cn } from "@/lib/utils";
 import { WhatsApp } from "./social-icons";
 import { useState } from "react";
 import Link from "next/link";
-import ButtonNeon from "./ui/neon-button";
 
 interface MenuItem {
     title: string;
@@ -111,7 +110,7 @@ const Navbar1 = ({
     return (
         <section
             className={cn(
-                "py-1  sticky top-0 z-50 bg-background shadow ",
+                "py-1 sticky top-0 z-50 bg-background shadow ",
                 className,
             )}
         >
@@ -137,17 +136,17 @@ const Navbar1 = ({
                     </div>
                     <div className="flex gap-2">
                         <Link href={cta.primary.url} className="hover:animate-tada hover:animate-iteration-count-once" >
-                            <ButtonNeon asChild size="lg">
+                            <Button asChild size="lg">
                                 <div className="flex gap-2">
                                     <Phone />{cta.primary.title}
                                 </div>
-                            </ButtonNeon>
+                            </Button>
                         </Link>
                         <Link href={"https://wa.me/923046954705"} className="hover:animate-tada hover:animate-iteration-count-once" target="_blank"
                             rel="noopener noreferrer">
-                            <ButtonNeon asChild size="lg">
+                            <Button asChild size="lg">
                                 <WhatsApp className="w-10" />
-                            </ButtonNeon>
+                            </Button>
                         </Link>
                     </div>
                 </nav>

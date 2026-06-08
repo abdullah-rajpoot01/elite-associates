@@ -1,6 +1,7 @@
 import { categories } from '@/content/data'
 import Link from 'next/link'
 import type { Metadata } from "next";
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "Property Categories | Elite Associates",
@@ -45,13 +46,11 @@ const Page = () => {
                 {categories.map((category, index) => (
                     <Link href={`/categories/${category.slug}`} key={index}>
                         <div className="-mx-2 flex flex-col max-w-lg  gap-6 rounded-lg sm:mx-0 group">
-                            <div className="aspect-square shrink-0 overflow-hidden rounded-lg border border-border/20 bg-muted group-hover:animate-sink group-hover:animate-iteration-count-infinite ">
-                                <img
-                                    alt=""
+                            <div className="relative aspect-square shrink-0 overflow-hidden rounded-lg border border-border/20 bg-muted group-hover:animate-sink group-hover:animate-iteration-count-infinite ">
+                                <Image fill
+                                    alt={category.slug}
                                     className="size-full object-cover"
-                                    height={96}
                                     src={category.image}
-                                    width={96}
                                 />
                             </div>
                             <div className="">

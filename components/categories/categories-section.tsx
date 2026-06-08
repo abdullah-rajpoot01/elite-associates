@@ -1,6 +1,7 @@
 import { categories } from "@/content/data";
 import Link from "next/link";
 import LoadMoreButton from "../listing/load-more";
+import Image from "next/image";
 
 
 
@@ -8,8 +9,8 @@ const CategoriesSection = () => {
   const slicedCategories = categories.slice(0, 6);
 
   return (
-    <div className="px-6 py-20 overflow-x-hidden bg-background">
-      <div className="mx-auto w-full max-w-(--breakpoint-xl)">
+    <div className="px-4 lg:px-8 py-20 overflow-x-hidden bg-background w-full">
+      <div className="mx-auto w-full">
         <h2 className="text-pretty font-medium  tracking-[-0.04em] sm:mx-auto sm:max-w-3xl text-center md:leading-[1.2] text-3xl sm:text-4xl  ">
           Explore Properties by Category
         </h2>
@@ -20,13 +21,12 @@ const CategoriesSection = () => {
           {slicedCategories.map((category, index) => (
             <Link href={`/categories/${category.slug}`} key={index}>
               <div className="-mx-2 flex flex-col max-w-lg  gap-6 rounded-lg sm:mx-0 group">
-                <div className="aspect-square shrink-0 overflow-hidden rounded-lg border border-border/20 bg-muted group-hover:animate-sink group-hover:animate-iteration-count-infinite ">
-                  <img
+                <div className="relative aspect-square shrink-0 overflow-hidden rounded-lg border border-border/20 bg-muted group-hover:animate-sink group-hover:animate-iteration-count-infinite ">
+                  <Image
+                   fill
                     alt=""
-                    className="size-full object-cover"
-                    height={96}
+                    className=" object-cover"
                     src={category.image}
-                    width={96}
                   />
                 </div>
                 <div className="">

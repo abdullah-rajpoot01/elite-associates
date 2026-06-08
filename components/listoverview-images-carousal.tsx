@@ -10,6 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"; 
+import Image from "next/image";
 
 interface CarouselPropType {
   images: string[];
@@ -43,11 +44,14 @@ export default function CarouselWithThumbs({images}:CarouselPropType) {
         <CarouselContent>
           {images.map((image) => (
             <CarouselItem key={image}>
-              <img
+              <div className="relative w-full aspect-square">
+              <Image 
                 alt="dddepth-248"
                 className="size-full rounded-xl object-cover"
                 src={image}
-              />
+                fill
+                />
+                </div>
             </CarouselItem>
           ))}
         </CarouselContent>

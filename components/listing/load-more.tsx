@@ -1,10 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
-import ButtonNeon from '../ui/neon-button';
 import { Loader } from 'lucide-react';
 import Link from 'next/link';
+import { Button } from '../ui/button';
 
 interface LoadMoreButtonProps {
     className?: string;
@@ -31,14 +30,14 @@ const LoadMoreButton: React.FC<LoadMoreButtonProps> = ({
     return (
         <div className='w-full flex justify-center items-center mt-12'>
             <Link href={url}>
-                <ButtonNeon
+                <Button
                     className={`group ${className} hover:animate-tada hover:animate-iteration-count-once capitalize`}
                     onClick={handleLoadMore}
                     disabled={isLoading}
                 >
                     <Loader className={isLoading ? "animate-spin animate-iteration-count-infinite" : ""} />
                     {isLoading ? 'Loading...' : text}
-                </ButtonNeon>
+                </Button>
             </Link>
         </div>
     );

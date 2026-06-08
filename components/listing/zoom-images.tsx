@@ -50,7 +50,7 @@ export function CarouselWithFooter({ images }: CarouselWithFooterProps) {
             <Carousel className="w-full " setApi={setApi}>
                 <CarouselContent>
                     {images.map((image, index) => (
-                        <CarouselItem key={index} className="basis-1/2">
+                        <CarouselItem key={index} className="basis-1/3">
                             <img
                                 alt="dddepth-248"
                                 className="size-full rounded-xl object-cover"

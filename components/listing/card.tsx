@@ -8,6 +8,7 @@ import { PropertyListing, ContactInfo } from "@/content/data";
 import { WhatsApp } from "../social-icons";
 import Link from "next/link";
 import ButtonNeon from "../ui/neon-button";
+import Image from "next/image";
 
 interface PropertyCardProps {
     listing: PropertyListing;
@@ -67,8 +68,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ listing, contact }) => {
             <CardHeader className="relative p-0 shrink-0">
                 <Link href={`/listings/${listing.purpose}/${listing.id}`} className="block">
                     <div className="relative aspect-video w-full border-b overflow-hidden bg-gray-100">
-                        <img
-                            alt={listing.title}
+                        <Image
+                            alt={listing.title} fill
                             className="object-cover w-full h-full"
                             src={listing.thumbnail}
                         />

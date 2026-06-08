@@ -14,7 +14,7 @@ const Listing = ({ listings }: ListingSectionProp) => {
     };
 
     return (
-        <div className="mx-auto max-w-(--breakpoint-xl) px-6 py-12 xl:px-0">
+        <div className="mx-auto max-w-(--breakpoint-xl) px-4 py-12 lg:px-8">
             <div className="flex items-end justify-between">
                 <h2 className="font-medium text-[1.5rem] sm:text-3xl tracking-tight">
                     Recommended Properties

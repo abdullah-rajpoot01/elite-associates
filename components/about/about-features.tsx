@@ -66,7 +66,7 @@ const AboutFeatures = () => {
             className="relative rounded-xl border bg-card p-6 dark:border-card-foreground/7 hover:animate- hover:animate-iteration-count-infinite group"
             key={index}
           >
-            <div className="absolute group-hover:animate-float group-hover:animate-duration-800 group-hover:animate-iteration-count-infinite -top-4 left-3 flex h-10 w-10 items-center justify-center rounded-full border-primary/90 bg-primary/90 text-primary-foreground shadow-indigo-400/70 shadow-lg hover:bg-primary dark:text-foreground dark:shadow-primary">
+            <div className="absolute group-hover:animate-float group-hover:animate-duration-800 group-hover:animate-iteration-count-infinite -top-4 left-3 flex h-10 w-10 items-center justify-center rounded-full border-primary/90 bg-primary/90 text-primary-foreground  hover:bg-primary dark:text-foreground dark:shadow-primary">
               <feature.icon />
             </div>
             <h3 className="mt-5 font-medium text-lg tracking-[-0.005em]">

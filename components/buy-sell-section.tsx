@@ -1,12 +1,8 @@
 import {
   ArrowUpRightIcon,
-  BinocularsIcon,
-  CogIcon,
-  ShieldCheckIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import ButtonNeon from "./ui/neon-button";
 
 const plusPoints = [
   {
@@ -34,7 +30,7 @@ const plusPoints = [
 export default function BuySellSection() {
   return (
     <div
-      className="mx-auto max-w-(--breakpoint-xl)  px-2 lg:px-12 py-24 text-center bg-background">
+      className="mx-auto max-w-(--breakpoint-xl)   lg:px-12 py-24 text-center bg-background">
       <h2 className="mx-auto mt-5 max-w-4xl text-balance font-medium  tracking-[-0.04em] text-3xl sm:text-4xl">
         Buy, Sell, or Rent With Confidence
       </h2>
@@ -44,7 +40,7 @@ export default function BuySellSection() {
       <div className="mt-16  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 bg-background rounded-md p-5">
         {plusPoints.map((plusPoint) => (
           <div
-            className="relative w-full overflow-hidden rounded-lg border bg-linear-to-b from-foreground/3 px-6 py-10 sm:max-w-xs group"
+            className="relative w-full overflow-hidden rounded-lg border bg-linear-to-b from-foreground/3 px-6 py-10 sm: max-w-sm group"
             key={plusPoint.title}
           >
             <BackgroundPattern />
@@ -58,9 +54,9 @@ export default function BuySellSection() {
               <p className="text-balance text-base text-muted-foreground">
                 {plusPoint.description}
               </p>
-              <Link href={plusPoint.ctaUrl}> <ButtonNeon className="mt-6 hover:animate-tada hover:animate-iteration-count-once">
+              <Link href={plusPoint.ctaUrl}> <Button className="mt-6 hover:animate-tada hover:animate-iteration-count-once">
                 {plusPoint.ctaText} <ArrowUpRightIcon />
-              </ButtonNeon>
+              </Button>
               </Link>
             </div>
           </div>

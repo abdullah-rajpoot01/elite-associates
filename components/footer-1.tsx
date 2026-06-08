@@ -50,12 +50,12 @@ const Footer1 = () => {
 
       <div className="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-gray-500/30 ">
         <div className="">
-          <Link href={"/"} className="inline-flex items-center justify-center gap-2  rounded-full ">
+          <Link href={"/"} className="relative aspect-squareinline-flex items-center justify-center gap-2  rounded-full ">
             <img
               src={
                 "/text-logo.png"
               }
-              className="max-h-15 dark:invert rounded-lg hover:animate-tada hover:animate-iteration-count-once"
+              className="max-h-10 dark:invert rounded-lg hover:animate-tada hover:animate-iteration-count-once"
             />
           </Link>
           <p className="max-w-102 text-sm mt-6 ">
